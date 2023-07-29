@@ -1,0 +1,2915 @@
+Examples/ARM/arm_bayes_example/arm_bayes_example_f32.c:123:12: style: Variable 'maxProba' is reassigned a value before the old one has been used. [redundantAssignment]
+  maxProba = result[index];
+           ^
+Examples/ARM/arm_bayes_example/arm_bayes_example_f32.c:111:12: note: maxProba is assigned
+  maxProba = result[index];
+           ^
+Examples/ARM/arm_bayes_example/arm_bayes_example_f32.c:123:12: note: maxProba is overwritten
+  maxProba = result[index];
+           ^
+Examples/ARM/arm_bayes_example/arm_bayes_example_f32.c:135:12: style: Variable 'maxProba' is reassigned a value before the old one has been used. [redundantAssignment]
+  maxProba = result[index];
+           ^
+Examples/ARM/arm_bayes_example/arm_bayes_example_f32.c:123:12: note: maxProba is assigned
+  maxProba = result[index];
+           ^
+Examples/ARM/arm_bayes_example/arm_bayes_example_f32.c:135:12: note: maxProba is overwritten
+  maxProba = result[index];
+           ^
+Examples/ARM/arm_bayes_example/arm_bayes_example_f32.c:135:12: style: Variable 'maxProba' is assigned a value that is never used. [unreadVariable]
+  maxProba = result[index];
+           ^
+Examples/ARM/arm_bayes_example/arm_bayes_example_f32.c:114:3: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  printf("Class = %d\n", index);
+  ^
+Examples/ARM/arm_bayes_example/arm_bayes_example_f32.c:126:3: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  printf("Class = %d\n", index);
+  ^
+Examples/ARM/arm_bayes_example/arm_bayes_example_f32.c:138:3: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+  printf("Class = %d\n", index);
+  ^
+Examples/ARM/arm_convolution_example/arm_convolution_example_f32.c:231:10: style: Variable 'status' is reassigned a value before the old one has been used. [redundantAssignment]
+  status = arm_cfft_radix4_init_f32(cfft_instance_ptr, 64, 1, 1);
+         ^
+Examples/ARM/arm_convolution_example/arm_convolution_example_f32.c:220:10: note: status is assigned
+  status = arm_cfft_radix4_init_f32(cfft_instance_ptr, 64, 0, 1);
+         ^
+Examples/ARM/arm_convolution_example/arm_convolution_example_f32.c:231:10: note: status is overwritten
+  status = arm_cfft_radix4_init_f32(cfft_instance_ptr, 64, 1, 1);
+         ^
+Examples/ARM/arm_convolution_example/arm_convolution_example_f32.c:242:10: style: Variable 'status' is reassigned a value before the old one has been used. [redundantAssignment]
+  status = (snr <= SNR_THRESHOLD) ? ARM_MATH_TEST_FAILURE : ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_convolution_example/arm_convolution_example_f32.c:231:10: note: status is assigned
+  status = arm_cfft_radix4_init_f32(cfft_instance_ptr, 64, 1, 1);
+         ^
+Examples/ARM/arm_convolution_example/arm_convolution_example_f32.c:242:10: note: status is overwritten
+  status = (snr <= SNR_THRESHOLD) ? ARM_MATH_TEST_FAILURE : ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_convolution_example/arm_convolution_example_f32.c:244:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_convolution_example/arm_convolution_example_f32.c:252:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Examples/ARM/arm_convolution_example/arm_convolution_example_f32.c:244:3: note: Found duplicate branches for 'if' and 'else'.
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_convolution_example/math_helper.c:73:13: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+   test =   (int *)(&pRef[i]);
+            ^
+Examples/ARM/arm_convolution_example/math_helper.c:82:13: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+   test =   (int *)(&pTest[i]);
+            ^
+Examples/ARM/arm_convolution_example/math_helper.c:94:11: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+ test =   (int *)(&EnergyError);
+          ^
+Examples/ARM/arm_convolution_example/math_helper.c:169:11: style: The scope of the variable 'diff' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+          ^
+Examples/ARM/arm_convolution_example/math_helper.c:169:17: style: The scope of the variable 'diffCrnt' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+                ^
+Examples/ARM/arm_convolution_example/math_helper.c:197:11: style: The scope of the variable 'diff' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+          ^
+Examples/ARM/arm_convolution_example/math_helper.c:197:17: style: The scope of the variable 'diffCrnt' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+                ^
+Examples/ARM/arm_convolution_example/math_helper.c:311:33: style:inconclusive: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'. [funcArgNamesDifferent]
+uint32_t arm_calc_2pow(uint32_t numShifts)
+                                ^
+Examples/ARM/arm_convolution_example/math_helper.h:60:33: note: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'.
+uint32_t arm_calc_2pow(uint32_t guard_bits);
+                                ^
+Examples/ARM/arm_convolution_example/math_helper.c:311:33: note: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'.
+uint32_t arm_calc_2pow(uint32_t numShifts)
+                                ^
+Examples/ARM/arm_convolution_example/math_helper.c:169:26: style: Variable 'diffCrnt' is assigned a value that is never used. [unreadVariable]
+  int32_t diff, diffCrnt = 0;
+                         ^
+Examples/ARM/arm_convolution_example/math_helper.c:197:26: style: Variable 'diffCrnt' is assigned a value that is never used. [unreadVariable]
+  int32_t diff, diffCrnt = 0;
+                         ^
+Examples/ARM/arm_dotproduct_example/arm_dotproduct_example_f32.c:171:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_dotproduct_example/arm_dotproduct_example_f32.c:179:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Examples/ARM/arm_dotproduct_example/arm_dotproduct_example_f32.c:171:3: note: Found duplicate branches for 'if' and 'else'.
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_fft_bin_example/arm_fft_bin_example_f32.c:135:9: style: Variable 'status' is reassigned a value before the old one has been used. [redundantAssignment]
+  status=arm_cfft_init_1024_f32(&varInstCfftF32);
+        ^
+Examples/ARM/arm_fft_bin_example/arm_fft_bin_example_f32.c:133:10: note: status is assigned
+  status = ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_fft_bin_example/arm_fft_bin_example_f32.c:135:9: note: status is overwritten
+  status=arm_cfft_init_1024_f32(&varInstCfftF32);
+        ^
+Examples/ARM/arm_fft_bin_example/arm_fft_bin_example_f32.c:147:10: style: Variable 'status' is reassigned a value before the old one has been used. [redundantAssignment]
+  status = (testIndex != refIndex) ? ARM_MATH_TEST_FAILURE : ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_fft_bin_example/arm_fft_bin_example_f32.c:135:9: note: status is assigned
+  status=arm_cfft_init_1024_f32(&varInstCfftF32);
+        ^
+Examples/ARM/arm_fft_bin_example/arm_fft_bin_example_f32.c:147:10: note: status is overwritten
+  status = (testIndex != refIndex) ? ARM_MATH_TEST_FAILURE : ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_fft_bin_example/arm_fft_bin_example_f32.c:149:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_fft_bin_example/arm_fft_bin_example_f32.c:157:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Examples/ARM/arm_fft_bin_example/arm_fft_bin_example_f32.c:149:3: note: Found duplicate branches for 'if' and 'else'.
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_fir_example/arm_fir_example_f32.c:244:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_fir_example/arm_fir_example_f32.c:252:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Examples/ARM/arm_fir_example/arm_fir_example_f32.c:244:3: note: Found duplicate branches for 'if' and 'else'.
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_fir_example/math_helper.c:73:13: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+   test =   (int *)(&pRef[i]);
+            ^
+Examples/ARM/arm_fir_example/math_helper.c:82:13: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+   test =   (int *)(&pTest[i]);
+            ^
+Examples/ARM/arm_fir_example/math_helper.c:94:11: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+ test =   (int *)(&EnergyError);
+          ^
+Examples/ARM/arm_fir_example/math_helper.c:169:11: style: The scope of the variable 'diff' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+          ^
+Examples/ARM/arm_fir_example/math_helper.c:169:17: style: The scope of the variable 'diffCrnt' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+                ^
+Examples/ARM/arm_fir_example/math_helper.c:197:11: style: The scope of the variable 'diff' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+          ^
+Examples/ARM/arm_fir_example/math_helper.c:197:17: style: The scope of the variable 'diffCrnt' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+                ^
+Examples/ARM/arm_fir_example/math_helper.c:311:33: style:inconclusive: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'. [funcArgNamesDifferent]
+uint32_t arm_calc_2pow(uint32_t numShifts)
+                                ^
+Examples/ARM/arm_fir_example/math_helper.h:60:33: note: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'.
+uint32_t arm_calc_2pow(uint32_t guard_bits);
+                                ^
+Examples/ARM/arm_fir_example/math_helper.c:311:33: note: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'.
+uint32_t arm_calc_2pow(uint32_t numShifts)
+                                ^
+Examples/ARM/arm_fir_example/math_helper.c:169:26: style: Variable 'diffCrnt' is assigned a value that is never used. [unreadVariable]
+  int32_t diff, diffCrnt = 0;
+                         ^
+Examples/ARM/arm_fir_example/math_helper.c:197:26: style: Variable 'diffCrnt' is assigned a value that is never used. [unreadVariable]
+  int32_t diff, diffCrnt = 0;
+                         ^
+Examples/ARM/arm_graphic_equalizer_example/arm_graphic_equalizer_example_q31.c:393:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_graphic_equalizer_example/arm_graphic_equalizer_example_q31.c:401:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Examples/ARM/arm_graphic_equalizer_example/arm_graphic_equalizer_example_q31.c:393:3: note: Found duplicate branches for 'if' and 'else'.
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_graphic_equalizer_example/math_helper.c:73:13: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+   test =   (int *)(&pRef[i]);
+            ^
+Examples/ARM/arm_graphic_equalizer_example/math_helper.c:82:13: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+   test =   (int *)(&pTest[i]);
+            ^
+Examples/ARM/arm_graphic_equalizer_example/math_helper.c:94:11: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+ test =   (int *)(&EnergyError);
+          ^
+Examples/ARM/arm_graphic_equalizer_example/math_helper.c:169:11: style: The scope of the variable 'diff' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+          ^
+Examples/ARM/arm_graphic_equalizer_example/math_helper.c:169:17: style: The scope of the variable 'diffCrnt' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+                ^
+Examples/ARM/arm_graphic_equalizer_example/math_helper.c:197:11: style: The scope of the variable 'diff' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+          ^
+Examples/ARM/arm_graphic_equalizer_example/math_helper.c:197:17: style: The scope of the variable 'diffCrnt' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+                ^
+Examples/ARM/arm_graphic_equalizer_example/math_helper.c:311:33: style:inconclusive: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'. [funcArgNamesDifferent]
+uint32_t arm_calc_2pow(uint32_t numShifts)
+                                ^
+Examples/ARM/arm_graphic_equalizer_example/math_helper.h:60:33: note: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'.
+uint32_t arm_calc_2pow(uint32_t guard_bits);
+                                ^
+Examples/ARM/arm_graphic_equalizer_example/math_helper.c:311:33: note: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'.
+uint32_t arm_calc_2pow(uint32_t numShifts)
+                                ^
+Examples/ARM/arm_graphic_equalizer_example/math_helper.c:169:26: style: Variable 'diffCrnt' is assigned a value that is never used. [unreadVariable]
+  int32_t diff, diffCrnt = 0;
+                         ^
+Examples/ARM/arm_graphic_equalizer_example/math_helper.c:197:26: style: Variable 'diffCrnt' is assigned a value that is never used. [unreadVariable]
+  int32_t diff, diffCrnt = 0;
+                         ^
+Examples/ARM/arm_linear_interp_example/arm_linear_interp_example_f32.c:189:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_linear_interp_example/arm_linear_interp_example_f32.c:197:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Examples/ARM/arm_linear_interp_example/arm_linear_interp_example_f32.c:189:3: note: Found duplicate branches for 'if' and 'else'.
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_linear_interp_example/math_helper.c:73:13: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+   test =   (int *)(&pRef[i]);
+            ^
+Examples/ARM/arm_linear_interp_example/math_helper.c:82:13: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+   test =   (int *)(&pTest[i]);
+            ^
+Examples/ARM/arm_linear_interp_example/math_helper.c:94:11: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+ test =   (int *)(&EnergyError);
+          ^
+Examples/ARM/arm_linear_interp_example/math_helper.c:169:11: style: The scope of the variable 'diff' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+          ^
+Examples/ARM/arm_linear_interp_example/math_helper.c:169:17: style: The scope of the variable 'diffCrnt' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+                ^
+Examples/ARM/arm_linear_interp_example/math_helper.c:197:11: style: The scope of the variable 'diff' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+          ^
+Examples/ARM/arm_linear_interp_example/math_helper.c:197:17: style: The scope of the variable 'diffCrnt' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+                ^
+Examples/ARM/arm_linear_interp_example/math_helper.c:311:33: style:inconclusive: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'. [funcArgNamesDifferent]
+uint32_t arm_calc_2pow(uint32_t numShifts)
+                                ^
+Examples/ARM/arm_linear_interp_example/math_helper.h:60:33: note: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'.
+uint32_t arm_calc_2pow(uint32_t guard_bits);
+                                ^
+Examples/ARM/arm_linear_interp_example/math_helper.c:311:33: note: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'.
+uint32_t arm_calc_2pow(uint32_t numShifts)
+                                ^
+Examples/ARM/arm_linear_interp_example/math_helper.c:169:26: style: Variable 'diffCrnt' is assigned a value that is never used. [unreadVariable]
+  int32_t diff, diffCrnt = 0;
+                         ^
+Examples/ARM/arm_linear_interp_example/math_helper.c:197:26: style: Variable 'diffCrnt' is assigned a value that is never used. [unreadVariable]
+  int32_t diff, diffCrnt = 0;
+                         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:182:10: style: Variable 'status' is reassigned a value before the old one has been used. [redundantAssignment]
+  status = arm_mat_mult_f32(&AT, &A, &ATMA);
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:173:10: note: status is assigned
+  status = arm_mat_trans_f32(&A, &AT);
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:182:10: note: status is overwritten
+  status = arm_mat_mult_f32(&AT, &A, &ATMA);
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:190:10: style: Variable 'status' is reassigned a value before the old one has been used. [redundantAssignment]
+  status = arm_mat_inverse_f32(&ATMA, &ATMAI);
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:182:10: note: status is assigned
+  status = arm_mat_mult_f32(&AT, &A, &ATMA);
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:190:10: note: status is overwritten
+  status = arm_mat_inverse_f32(&ATMA, &ATMAI);
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:193:10: style: Variable 'status' is reassigned a value before the old one has been used. [redundantAssignment]
+  status = arm_mat_mult_f32(&ATMAI, &AT, &ATMA);
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:190:10: note: status is assigned
+  status = arm_mat_inverse_f32(&ATMA, &ATMAI);
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:193:10: note: status is overwritten
+  status = arm_mat_mult_f32(&ATMAI, &AT, &ATMA);
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:206:10: style: Variable 'status' is reassigned a value before the old one has been used. [redundantAssignment]
+  status = arm_mat_mult_f32(&ATMA, &B, &X);
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:193:10: note: status is assigned
+  status = arm_mat_mult_f32(&ATMAI, &AT, &ATMA);
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:206:10: note: status is overwritten
+  status = arm_mat_mult_f32(&ATMA, &B, &X);
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:214:10: style: Variable 'status' is reassigned a value before the old one has been used. [redundantAssignment]
+  status = (snr < SNR_THRESHOLD) ? ARM_MATH_TEST_FAILURE : ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:206:10: note: status is assigned
+  status = arm_mat_mult_f32(&ATMA, &B, &X);
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:214:10: note: status is overwritten
+  status = (snr < SNR_THRESHOLD) ? ARM_MATH_TEST_FAILURE : ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:216:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:224:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Examples/ARM/arm_matrix_example/arm_matrix_example_f32.c:216:3: note: Found duplicate branches for 'if' and 'else'.
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_matrix_example/math_helper.c:73:13: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+   test =   (int *)(&pRef[i]);
+            ^
+Examples/ARM/arm_matrix_example/math_helper.c:82:13: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+   test =   (int *)(&pTest[i]);
+            ^
+Examples/ARM/arm_matrix_example/math_helper.c:94:11: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+ test =   (int *)(&EnergyError);
+          ^
+Examples/ARM/arm_matrix_example/math_helper.c:169:11: style: The scope of the variable 'diff' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+          ^
+Examples/ARM/arm_matrix_example/math_helper.c:169:17: style: The scope of the variable 'diffCrnt' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+                ^
+Examples/ARM/arm_matrix_example/math_helper.c:197:11: style: The scope of the variable 'diff' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+          ^
+Examples/ARM/arm_matrix_example/math_helper.c:197:17: style: The scope of the variable 'diffCrnt' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+                ^
+Examples/ARM/arm_matrix_example/math_helper.c:311:33: style:inconclusive: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'. [funcArgNamesDifferent]
+uint32_t arm_calc_2pow(uint32_t numShifts)
+                                ^
+Examples/ARM/arm_matrix_example/math_helper.h:60:33: note: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'.
+uint32_t arm_calc_2pow(uint32_t guard_bits);
+                                ^
+Examples/ARM/arm_matrix_example/math_helper.c:311:33: note: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'.
+uint32_t arm_calc_2pow(uint32_t numShifts)
+                                ^
+Examples/ARM/arm_matrix_example/math_helper.c:169:26: style: Variable 'diffCrnt' is assigned a value that is never used. [unreadVariable]
+  int32_t diff, diffCrnt = 0;
+                         ^
+Examples/ARM/arm_matrix_example/math_helper.c:197:26: style: Variable 'diffCrnt' is assigned a value that is never used. [unreadVariable]
+  int32_t diff, diffCrnt = 0;
+                         ^
+Examples/ARM/arm_signal_converge_example/arm_signal_converge_example_f32.c:250:10: style: Variable 'status' is reassigned a value before the old one has been used. [redundantAssignment]
+  status = (minValue > DELTA_COEFF) ? ARM_MATH_TEST_FAILURE : ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_signal_converge_example/arm_signal_converge_example_f32.c:227:10: note: status is assigned
+  status = ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_signal_converge_example/arm_signal_converge_example_f32.c:250:10: note: status is overwritten
+  status = (minValue > DELTA_COEFF) ? ARM_MATH_TEST_FAILURE : ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_signal_converge_example/arm_signal_converge_example_f32.c:250:10: style: Variable 'status' is reassigned a value before the old one has been used. [redundantAssignment]
+  status = (minValue > DELTA_COEFF) ? ARM_MATH_TEST_FAILURE : ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_signal_converge_example/arm_signal_converge_example_f32.c:238:12: note: status is assigned
+    status = ARM_MATH_TEST_FAILURE;
+           ^
+Examples/ARM/arm_signal_converge_example/arm_signal_converge_example_f32.c:250:10: note: status is overwritten
+  status = (minValue > DELTA_COEFF) ? ARM_MATH_TEST_FAILURE : ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_signal_converge_example/arm_signal_converge_example_f32.c:252:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_signal_converge_example/arm_signal_converge_example_f32.c:260:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Examples/ARM/arm_signal_converge_example/arm_signal_converge_example_f32.c:252:3: note: Found duplicate branches for 'if' and 'else'.
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_signal_converge_example/math_helper.c:73:13: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+   test =   (int *)(&pRef[i]);
+            ^
+Examples/ARM/arm_signal_converge_example/math_helper.c:82:13: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+   test =   (int *)(&pTest[i]);
+            ^
+Examples/ARM/arm_signal_converge_example/math_helper.c:94:11: portability: Casting from float * to signed int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+ test =   (int *)(&EnergyError);
+          ^
+Examples/ARM/arm_signal_converge_example/math_helper.c:169:11: style: The scope of the variable 'diff' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+          ^
+Examples/ARM/arm_signal_converge_example/math_helper.c:169:17: style: The scope of the variable 'diffCrnt' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+                ^
+Examples/ARM/arm_signal_converge_example/math_helper.c:197:11: style: The scope of the variable 'diff' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+          ^
+Examples/ARM/arm_signal_converge_example/math_helper.c:197:17: style: The scope of the variable 'diffCrnt' can be reduced. [variableScope]
+  int32_t diff, diffCrnt = 0;
+                ^
+Examples/ARM/arm_signal_converge_example/math_helper.c:311:33: style:inconclusive: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'. [funcArgNamesDifferent]
+uint32_t arm_calc_2pow(uint32_t numShifts)
+                                ^
+Examples/ARM/arm_signal_converge_example/math_helper.h:60:33: note: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'.
+uint32_t arm_calc_2pow(uint32_t guard_bits);
+                                ^
+Examples/ARM/arm_signal_converge_example/math_helper.c:311:33: note: Function 'arm_calc_2pow' argument 1 names different: declaration 'guard_bits' definition 'numShifts'.
+uint32_t arm_calc_2pow(uint32_t numShifts)
+                                ^
+Examples/ARM/arm_signal_converge_example/math_helper.c:169:26: style: Variable 'diffCrnt' is assigned a value that is never used. [unreadVariable]
+  int32_t diff, diffCrnt = 0;
+                         ^
+Examples/ARM/arm_signal_converge_example/math_helper.c:197:26: style: Variable 'diffCrnt' is assigned a value that is never used. [unreadVariable]
+  int32_t diff, diffCrnt = 0;
+                         ^
+Examples/ARM/arm_sin_cos_example/arm_sin_cos_example_f32.c:158:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_sin_cos_example/arm_sin_cos_example_f32.c:166:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Examples/ARM/arm_sin_cos_example/arm_sin_cos_example_f32.c:158:3: note: Found duplicate branches for 'if' and 'else'.
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_variance_example/arm_variance_example_f32.c:201:10: style: Variable 'status' is reassigned a value before the old one has been used. [redundantAssignment]
+  status = (diff > DELTA) ? ARM_MATH_TEST_FAILURE : ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_variance_example/arm_variance_example_f32.c:150:10: note: status is assigned
+  status = ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_variance_example/arm_variance_example_f32.c:201:10: note: status is overwritten
+  status = (diff > DELTA) ? ARM_MATH_TEST_FAILURE : ARM_MATH_SUCCESS;
+         ^
+Examples/ARM/arm_variance_example/arm_variance_example_f32.c:203:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (status != ARM_MATH_SUCCESS)
+  ^
+Examples/ARM/arm_variance_example/arm_variance_example_f32.c:211:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Examples/ARM/arm_variance_example/arm_variance_example_f32.c:203:3: note: Found duplicate branches for 'if' and 'else'.
+  if (status != ARM_MATH_SUCCESS)
+  ^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_basic.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_bayes.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_complexf.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_controller.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_distance.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_fastmath.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_filtering.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_interpolation.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_matrix.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_quaternion.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_statistics.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_support.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_svm.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_transform.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/cmsisdsp_pkg/src/cmsisdsp_window.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:191:6: style: Class 'GenericSource' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+     GenericSource(FIFOBase<OUT> &dst):mDst(dst){};
+     ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:204:6: style: Class 'GenericSink' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+     GenericSink(FIFOBase<IN> &src):mSrc(src){};
+     ^
+PythonWrapper/examples/kws_example/kws/AppNodes.h:55:5: style: Class 'Sink' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    Sink(FIFOBase<q15_t> &src):GenericSink<q15_t,inputSize>(src){};
+    ^
+PythonWrapper/examples/kws_example/kws/AppNodes.h:88:5: style: Class 'Source' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    Source(FIFOBase<q15_t> &dst):GenericSource<q15_t,outputSize>(dst)
+    ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:65:9: style: Class 'FIFO < q15_t , 160 , 1 >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        FIFO(T *buffer,int delay=0):mBuffer(buffer),readPos(0),writePos(delay) {};
+        ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:66:9: style: Class 'FIFO < q15_t , 160 , 1 >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        FIFO(uint8_t *buffer,int delay=0):mBuffer((T*)buffer),readPos(0),writePos(delay) {};
+        ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:65:9: style: Class 'FIFO < q15_t , 400 , 1 >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        FIFO(T *buffer,int delay=0):mBuffer(buffer),readPos(0),writePos(delay) {};
+        ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:66:9: style: Class 'FIFO < q15_t , 400 , 1 >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        FIFO(uint8_t *buffer,int delay=0):mBuffer((T*)buffer),readPos(0),writePos(delay) {};
+        ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:65:9: style: Class 'FIFO < q15_t , 49 , 0 >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        FIFO(T *buffer,int delay=0):mBuffer(buffer),readPos(0),writePos(delay) {};
+        ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:66:9: style: Class 'FIFO < q15_t , 49 , 0 >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        FIFO(uint8_t *buffer,int delay=0):mBuffer((T*)buffer),readPos(0),writePos(delay) {};
+        ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:65:9: style: Class 'FIFO < q15_t , 98 , 1 >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        FIFO(T *buffer,int delay=0):mBuffer(buffer),readPos(0),writePos(delay) {};
+        ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:66:9: style: Class 'FIFO < q15_t , 98 , 1 >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        FIFO(uint8_t *buffer,int delay=0):mBuffer((T*)buffer),readPos(0),writePos(delay) {};
+        ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:65:9: style: Class 'FIFO < q15_t , 1 , 1 >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        FIFO(T *buffer,int delay=0):mBuffer(buffer),readPos(0),writePos(delay) {};
+        ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:66:9: style: Class 'FIFO < q15_t , 1 , 1 >' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        FIFO(uint8_t *buffer,int delay=0):mBuffer((T*)buffer),readPos(0),writePos(delay) {};
+        ^
+PythonWrapper/examples/kws_example/kws/AppNodes.h:57:9: style: The function 'run' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+    int run()
+        ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:130:17: note: Virtual function in base class
+    virtual int run()=0;
+                ^
+PythonWrapper/examples/kws_example/kws/AppNodes.h:57:9: note: Function in derived class
+    int run()
+        ^
+PythonWrapper/examples/kws_example/kws/AppNodes.h:93:9: style: The function 'run' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+    int run(){
+        ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:130:17: note: Virtual function in base class
+    virtual int run()=0;
+                ^
+PythonWrapper/examples/kws_example/kws/AppNodes.h:93:9: note: Function in derived class
+    int run(){
+        ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:228:9: style: The function 'run' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+    int run(){
+        ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:130:17: note: Virtual function in base class
+    virtual int run()=0;
+                ^
+PythonWrapper/examples/kws_example/kws/GenericNodes.h:228:9: note: Function in derived class
+    int run(){
+        ^
+PythonWrapper/examples/kws_example/kws/AppNodes.h:151:9: warning: Size of pointer 'state' used instead of size of its data. [pointerSize]
+        state=(q15_t*)malloc(stateLength * sizeof(q15_t*));
+        ^
+PythonWrapper/examples/kws_example/kws/AppNodes.h:161:25: style: Variable 'stateLength' is assigned a value that is never used. [unreadVariable]
+        int stateLength = NUMTAPS + blockSize - 1;
+                        ^
+PythonWrapper/examples/kws_example/kws/AppNodes.h:163:26: style: Variable 'status' is assigned a value that is never used. [unreadVariable]
+        arm_status status=arm_fir_init_q15(&(this->firq15),NUMTAPS,fir_coefs,state,blockSize);
+                         ^
+PythonWrapper/examples/kws_example/kws/AppNodes.h:255:22: style: Variable 'status' is assigned a value that is never used. [unreadVariable]
+    arm_status status=arm_divide_q15(k,blockSize-1,&quotient,&shift);
+                     ^
+PythonWrapper/examples/kws_example/kws/scheduler.cpp:124:0: information: Skipping configuration 'CHECKERROR' since the value of 'CHECKERROR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+            CHECKERROR;
+^
+Scripts/mfcctemplates/mfccdata.c:4:5: error: syntax error [syntaxError]
+{%- if configs[s][c]["hasF16"] %}
+    ^
+Source/BasicMathFunctions/BasicMathFunctions.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 14 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+Source/BasicMathFunctions/arm_dot_prod_f32.c:166:9: style: Redundant initialization for 'tmp'. The initialized value is overwritten before it is read. [redundantInitialization]
+    tmp = vpadd_f32(vget_low_f32(accum), vget_high_f32(accum));
+        ^
+Source/BasicMathFunctions/arm_dot_prod_f32.c:136:17: note: tmp is initialized
+    f32x2_t tmp = vdup_n_f32(0);
+                ^
+Source/BasicMathFunctions/arm_dot_prod_f32.c:166:9: note: tmp is overwritten
+    tmp = vpadd_f32(vget_low_f32(accum), vget_high_f32(accum));
+        ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f32.c:355:11: style: Redundant initialization for 'pTheta'. The initialized value is overwritten before it is read. [redundantInitialization]
+    pTheta=S->theta;
+          ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f32.c:343:29: note: pTheta is initialized
+    const float32_t *pTheta = S->theta;
+                            ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f32.c:355:11: note: pTheta is overwritten
+    pTheta=S->theta;
+          ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f32.c:356:11: style: Redundant initialization for 'pSigma'. The initialized value is overwritten before it is read. [redundantInitialization]
+    pSigma=S->sigma;
+          ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f32.c:344:29: note: pSigma is initialized
+    const float32_t *pSigma = S->sigma;
+                            ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f32.c:356:11: note: pSigma is overwritten
+    pSigma=S->sigma;
+          ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f32.c:346:25: style: Variable 'pIn' is assigned a value that is never used. [unreadVariable]
+    const float32_t *pIn=in;
+                        ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f32.c:165:25: style: Variable 'pIn' is assigned a value that is never used. [unreadVariable]
+    const float32_t *pIn=in;
+                        ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f16.c:164:11: style: Redundant initialization for 'pTheta'. The initialized value is overwritten before it is read. [redundantInitialization]
+    pTheta=S->theta;
+          ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f16.c:153:29: note: pTheta is initialized
+    const float16_t *pTheta = S->theta;
+                            ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f16.c:164:11: note: pTheta is overwritten
+    pTheta=S->theta;
+          ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f16.c:165:11: style: Redundant initialization for 'pSigma'. The initialized value is overwritten before it is read. [redundantInitialization]
+    pSigma=S->sigma;
+          ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f16.c:154:29: note: pSigma is initialized
+    const float16_t *pSigma = S->sigma;
+                            ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f16.c:165:11: note: pSigma is overwritten
+    pSigma=S->sigma;
+          ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f16.c:187:13: style: Variable 'tmp' is reassigned a value before the old one has been used. [redundantAssignment]
+        tmp = -0.5f16 * (_Float16)acc1;
+            ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f16.c:173:13: note: tmp is assigned
+        tmp = 0.0f16;
+            ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f16.c:187:13: note: tmp is overwritten
+        tmp = -0.5f16 * (_Float16)acc1;
+            ^
+Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f16.c:156:25: style: Variable 'pIn' is assigned a value that is never used. [unreadVariable]
+    const float16_t *pIn=in;
+                        ^
+Source/DistanceFunctions/arm_chebyshev_distance_f64.c:52:19: style: Variable 'diff' is assigned a value that is never used. [unreadVariable]
+    float64_t diff=0.,  maxVal,tmpA, tmpB;
+                  ^
+Source/DistanceFunctions/arm_chebyshev_distance_f32.c:109:13: style: The scope of the variable 'blkCnt' can be reduced. [variableScope]
+   uint32_t blkCnt;
+            ^
+Source/DistanceFunctions/arm_chebyshev_distance_f32.c:108:18: style: Variable 'diff' is assigned a value that is never used. [unreadVariable]
+   float32_t diff=0.0f, maxVal=0.0f, tmpA, tmpB;
+                 ^
+Source/FastMathFunctions/arm_atan2_q31.c:204:18: style: Expression is always false because 'else if' condition matches previous condition at line 198. [multiCondition]
+            if (y<0)
+                 ^
+Source/FastMathFunctions/arm_atan2_q15.c:204:18: style: Expression is always false because 'else if' condition matches previous condition at line 198. [multiCondition]
+            if (y<0)
+                 ^
+Source/FilteringFunctions/FilteringFunctions.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 24 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+Source/FilteringFunctions/arm_conv_fast_opt_q15.c:161:9: style: Redundant initialization for 'pScr1'. The initialized value is overwritten before it is read. [redundantInitialization]
+  pScr1 = pScratch1;
+        ^
+Source/FilteringFunctions/arm_conv_fast_opt_q15.c:78:22: note: pScr1 is initialized
+        q15_t *pScr1 = pScratch1;                      /* Temporary pointer for scratch1 */
+                     ^
+Source/FilteringFunctions/arm_conv_fast_opt_q15.c:161:9: note: pScr1 is overwritten
+  pScr1 = pScratch1;
+        ^
+Source/FilteringFunctions/arm_conv_fast_opt_q15.c:118:9: style: Redundant initialization for 'pScr2'. The initialized value is overwritten before it is read. [redundantInitialization]
+  pScr2 = pScratch2 + srcBLen - 1;
+        ^
+Source/FilteringFunctions/arm_conv_fast_opt_q15.c:79:22: note: pScr2 is initialized
+        q15_t *pScr2 = pScratch2;                      /* Temporary pointer for scratch1 */
+                     ^
+Source/FilteringFunctions/arm_conv_fast_opt_q15.c:118:9: note: pScr2 is overwritten
+  pScr2 = pScratch2 + srcBLen - 1;
+        ^
+Source/FilteringFunctions/arm_conv_fast_q15.c:440:10: style: Variable 'px' is reassigned a value before the old one has been used. [redundantAssignment]
+      px = pIn1 + count;
+         ^
+Source/FilteringFunctions/arm_conv_fast_q15.c:418:6: note: px is assigned
+  px += 3U;
+     ^
+Source/FilteringFunctions/arm_conv_fast_q15.c:440:10: note: px is overwritten
+      px = pIn1 + count;
+         ^
+Source/FilteringFunctions/arm_conv_opt_q15.c:157:9: style: Redundant initialization for 'pScr1'. The initialized value is overwritten before it is read. [redundantInitialization]
+  pScr1 = pScratch1;
+        ^
+Source/FilteringFunctions/arm_conv_opt_q15.c:74:22: note: pScr1 is initialized
+        q15_t *pScr1 = pScratch1;                      /* Temporary pointer for scratch1 */
+                     ^
+Source/FilteringFunctions/arm_conv_opt_q15.c:157:9: note: pScr1 is overwritten
+  pScr1 = pScratch1;
+        ^
+Source/FilteringFunctions/arm_conv_opt_q15.c:114:9: style: Redundant initialization for 'pScr2'. The initialized value is overwritten before it is read. [redundantInitialization]
+  pScr2 = pScratch2 + srcBLen - 1;
+        ^
+Source/FilteringFunctions/arm_conv_opt_q15.c:75:22: note: pScr2 is initialized
+        q15_t *pScr2 = pScratch2;                      /* Temporary pointer for scratch1 */
+                     ^
+Source/FilteringFunctions/arm_conv_opt_q15.c:114:9: note: pScr2 is overwritten
+  pScr2 = pScratch2 + srcBLen - 1;
+        ^
+Source/FilteringFunctions/arm_conv_partial_fast_q15.c:462:12: style: Variable 'px' is reassigned a value before the old one has been used. [redundantAssignment]
+        px = pSrc1 + count;
+           ^
+Source/FilteringFunctions/arm_conv_partial_fast_q15.c:440:14: note: px is assigned
+          px += 3U;
+             ^
+Source/FilteringFunctions/arm_conv_partial_fast_q15.c:462:12: note: px is overwritten
+        px = pSrc1 + count;
+           ^
+Source/FilteringFunctions/arm_correlate_fast_opt_q15.c:142:9: style: Redundant initialization for 'pScr1'. The initialized value is overwritten before it is read. [redundantInitialization]
+  pScr1 = pScratch;
+        ^
+Source/FilteringFunctions/arm_correlate_fast_opt_q15.c:76:22: note: pScr1 is initialized
+        q15_t *pScr1 = pScratch;                       /* Temporary pointer for scratch */
+                     ^
+Source/FilteringFunctions/arm_correlate_fast_opt_q15.c:142:9: note: pScr1 is overwritten
+  pScr1 = pScratch;
+        ^
+Source/FilteringFunctions/arm_correlate_fast_q15.c:431:10: style: Variable 'px' is reassigned a value before the old one has been used. [redundantAssignment]
+      px = pIn1 + count;
+         ^
+Source/FilteringFunctions/arm_correlate_fast_q15.c:404:6: note: px is assigned
+  px += 3U;
+     ^
+Source/FilteringFunctions/arm_correlate_fast_q15.c:431:10: note: px is overwritten
+      px = pIn1 + count;
+         ^
+Source/FilteringFunctions/arm_fir_sparse_q15.c:165:10: style: Variable 'tapCnt' is reassigned a value before the old one has been used. [redundantAssignment]
+  tapCnt = (uint32_t) numTaps - 2U;
+         ^
+Source/FilteringFunctions/arm_fir_sparse_q15.c:90:10: note: tapCnt is assigned
+  tapCnt = numTaps;
+         ^
+Source/FilteringFunctions/arm_fir_sparse_q15.c:165:10: note: tapCnt is overwritten
+  tapCnt = (uint32_t) numTaps - 2U;
+         ^
+Source/FilteringFunctions/arm_fir_sparse_q7.c:166:10: style: Variable 'tapCnt' is reassigned a value before the old one has been used. [redundantAssignment]
+  tapCnt = (uint32_t) numTaps - 2U;
+         ^
+Source/FilteringFunctions/arm_fir_sparse_q7.c:91:10: note: tapCnt is assigned
+  tapCnt = numTaps;
+         ^
+Source/FilteringFunctions/arm_fir_sparse_q7.c:166:10: note: tapCnt is overwritten
+  tapCnt = (uint32_t) numTaps - 2U;
+         ^
+Source/FilteringFunctions/arm_conv_q31.c:406:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (srcBLen >= 4U)
+  ^
+Source/FilteringFunctions/arm_conv_q31.c:584:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Source/FilteringFunctions/arm_conv_q31.c:406:3: note: Found duplicate branches for 'if' and 'else'.
+  if (srcBLen >= 4U)
+  ^
+Source/FilteringFunctions/arm_conv_q7.c:416:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (srcBLen >= 4U)
+  ^
+Source/FilteringFunctions/arm_conv_q7.c:684:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Source/FilteringFunctions/arm_conv_q7.c:416:3: note: Found duplicate branches for 'if' and 'else'.
+  if (srcBLen >= 4U)
+  ^
+Source/FilteringFunctions/arm_correlate_f64.c:243:5: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+    if (srcBLen >= 4U)
+    ^
+Source/FilteringFunctions/arm_correlate_f64.c:298:5: note: Found duplicate branches for 'if' and 'else'.
+    else
+    ^
+Source/FilteringFunctions/arm_correlate_f64.c:243:5: note: Found duplicate branches for 'if' and 'else'.
+    if (srcBLen >= 4U)
+    ^
+Source/FilteringFunctions/arm_correlate_q31.c:472:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (srcBLen >= 4U)
+  ^
+Source/FilteringFunctions/arm_correlate_q31.c:659:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Source/FilteringFunctions/arm_correlate_q31.c:472:3: note: Found duplicate branches for 'if' and 'else'.
+  if (srcBLen >= 4U)
+  ^
+Source/FilteringFunctions/arm_correlate_q7.c:496:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (srcBLen >= 4U)
+  ^
+Source/FilteringFunctions/arm_correlate_q7.c:772:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Source/FilteringFunctions/arm_correlate_q7.c:496:3: note: Found duplicate branches for 'if' and 'else'.
+  if (srcBLen >= 4U)
+  ^
+Source/FilteringFunctions/arm_biquad_cascade_df1_q15.c:533:18: style: The scope of the variable 'sample' can be reduced. [variableScope]
+        uint32_t sample, stage = (uint32_t) S->numStages;     /* Stage loop counter */
+                 ^
+Source/FilteringFunctions/arm_conv_fast_q31.c:79:18: style: The scope of the variable 'j' can be reduced. [variableScope]
+        uint32_t j, k, count, blkCnt;                  /* Loop counters */
+                 ^
+Source/FilteringFunctions/arm_conv_partial_f32.c:641:18: style: The scope of the variable 'i' can be reduced. [variableScope]
+        uint32_t i, j;                                 /* Loop counters */
+                 ^
+Source/FilteringFunctions/arm_conv_partial_f32.c:641:21: style: The scope of the variable 'j' can be reduced. [variableScope]
+        uint32_t i, j;                                 /* Loop counters */
+                    ^
+Source/FilteringFunctions/arm_conv_partial_q15.c:720:18: style: The scope of the variable 'i' can be reduced. [variableScope]
+        uint32_t i, j;                                 /* Loop counters */
+                 ^
+Source/FilteringFunctions/arm_conv_partial_q15.c:720:21: style: The scope of the variable 'j' can be reduced. [variableScope]
+        uint32_t i, j;                                 /* Loop counters */
+                    ^
+Source/FilteringFunctions/arm_conv_partial_q31.c:595:18: style: The scope of the variable 'i' can be reduced. [variableScope]
+        uint32_t i, j;                                 /* Loop counters */
+                 ^
+Source/FilteringFunctions/arm_conv_partial_q31.c:595:21: style: The scope of the variable 'j' can be reduced. [variableScope]
+        uint32_t i, j;                                 /* Loop counters */
+                    ^
+Source/FilteringFunctions/arm_conv_partial_q7.c:714:18: style: The scope of the variable 'i' can be reduced. [variableScope]
+        uint32_t i, j;                                 /* Loop counters */
+                 ^
+Source/FilteringFunctions/arm_conv_partial_q7.c:714:21: style: The scope of the variable 'j' can be reduced. [variableScope]
+        uint32_t i, j;                                 /* Loop counters */
+                    ^
+Source/FilteringFunctions/arm_correlate_fast_q31.c:82:18: style: The scope of the variable 'outBlockSize' can be reduced. [variableScope]
+        uint32_t outBlockSize;
+                 ^
+Source/FilteringFunctions/arm_fir_f64.c:154:16: style: The scope of the variable 'px' can be reduced. [variableScope]
+    float64_t *px;                                 /* Temporary pointer for state buffer */
+               ^
+Source/FilteringFunctions/arm_fir_f64.c:155:22: style: The scope of the variable 'pb' can be reduced. [variableScope]
+    const float64_t *pb;                                 /* Temporary pointer for coefficient buffer */
+                     ^
+Source/FilteringFunctions/arm_fir_f64.c:158:14: style: The scope of the variable 'i' can be reduced. [variableScope]
+    uint32_t i, tapCnt, blkCnt;                    /* Loop counters */
+             ^
+Source/FilteringFunctions/arm_conv_opt_q7.c:195:8: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+  pIn2 = (q7_t *) py;
+       ^
+Source/FilteringFunctions/arm_conv_partial_fast_opt_q15.c:70:21: style: Variable 'pOut' is assigned a value that is never used. [unreadVariable]
+        q15_t *pOut = pDst;                            /* Output pointer */
+                    ^
+Source/FilteringFunctions/arm_conv_partial_fast_opt_q15.c:71:22: style: Variable 'pScr1' is assigned a value that is never used. [unreadVariable]
+        q15_t *pScr1 = pScratch1;                      /* Temporary pointer for scratch1 */
+                     ^
+Source/FilteringFunctions/arm_conv_partial_fast_opt_q15.c:72:22: style: Variable 'pScr2' is assigned a value that is never used. [unreadVariable]
+        q15_t *pScr2 = pScratch2;                      /* Temporary pointer for scratch1 */
+                     ^
+Source/FilteringFunctions/arm_conv_partial_fast_q15.c:67:21: style: Variable 'pOut' is assigned a value that is never used. [unreadVariable]
+        q15_t *pOut = pDst;                            /* Output pointer */
+                    ^
+Source/FilteringFunctions/arm_conv_partial_fast_q31.c:68:21: style: Variable 'pOut' is assigned a value that is never used. [unreadVariable]
+        q31_t *pOut = pDst;                            /* Output pointer */
+                    ^
+Source/FilteringFunctions/arm_conv_partial_opt_q15.c:71:21: style: Variable 'pOut' is assigned a value that is never used. [unreadVariable]
+        q15_t *pOut = pDst;                            /* Output pointer */
+                    ^
+Source/FilteringFunctions/arm_conv_partial_opt_q15.c:72:22: style: Variable 'pScr1' is assigned a value that is never used. [unreadVariable]
+        q15_t *pScr1 = pScratch1;                      /* Temporary pointer for scratch1 */
+                     ^
+Source/FilteringFunctions/arm_conv_partial_opt_q15.c:73:22: style: Variable 'pScr2' is assigned a value that is never used. [unreadVariable]
+        q15_t *pScr2 = pScratch2;                      /* Temporary pointer for scratch1 */
+                     ^
+Source/FilteringFunctions/arm_conv_partial_opt_q7.c:76:20: style: Variable 'pOut' is assigned a value that is never used. [unreadVariable]
+        q7_t *pOut = pDst;                             /* Output pointer */
+                   ^
+Source/FilteringFunctions/arm_conv_partial_opt_q7.c:209:10: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+    pIn2 = (q7_t *) py;
+         ^
+Source/FilteringFunctions/arm_fir_lattice_f32.c:144:10: style: Variable 'gcurr0' is assigned a value that is never used. [unreadVariable]
+  gcurr0 = 0.0f;
+         ^
+Source/FilteringFunctions/arm_fir_lattice_q15.c:72:10: style: Variable 'gcurr0' is assigned a value that is never used. [unreadVariable]
+  gcurr0 = 0;
+         ^
+Source/FilteringFunctions/arm_fir_lattice_q31.c:75:10: style: Variable 'gcurr0' is assigned a value that is never used. [unreadVariable]
+  gcurr0 = 0;
+         ^
+Source/FilteringFunctions/arm_iir_lattice_q15.c:65:39: style: Variable 'gcurr' is assigned a value that is never used. [unreadVariable]
+        q31_t fcurr, fnext = 0, gcurr = 0, gnext;      /* Temporary variables for lattice stages */
+                                      ^
+Source/FilteringFunctions/arm_iir_lattice_q31.c:64:39: style: Variable 'gcurr' is assigned a value that is never used. [unreadVariable]
+        q31_t fcurr, fnext = 0, gcurr = 0, gnext;        /* Temporary variables for lattice stages */
+                                      ^
+Source/FilteringFunctions/arm_lms_f32.c:357:5: style: Variable 'e' is assigned a value that is never used. [unreadVariable]
+  e = 0.0f;
+    ^
+Source/FilteringFunctions/arm_lms_f32.c:358:5: style: Variable 'w' is assigned a value that is never used. [unreadVariable]
+  w = 0.0f;
+    ^
+Source/FilteringFunctions/arm_lms_norm_f32.c:370:5: style: Variable 'e' is assigned a value that is never used. [unreadVariable]
+  e = 0.0f;
+    ^
+Source/FilteringFunctions/arm_lms_norm_f32.c:371:5: style: Variable 'w' is assigned a value that is never used. [unreadVariable]
+  w = 0.0f;
+    ^
+Source/FilteringFunctions/arm_lms_norm_q15.c:82:17: style: Variable 'e' is assigned a value that is never used. [unreadVariable]
+        q15_t e = 0, d = 0;                            /* Error, reference data sample */
+                ^
+Source/FilteringFunctions/arm_lms_norm_q15.c:82:24: style: Variable 'd' is assigned a value that is never used. [unreadVariable]
+        q15_t e = 0, d = 0;                            /* Error, reference data sample */
+                       ^
+Source/FilteringFunctions/arm_lms_norm_q15.c:83:17: style: Variable 'w' is assigned a value that is never used. [unreadVariable]
+        q15_t w = 0, in;                               /* Weight factor and state */
+                ^
+Source/FilteringFunctions/arm_lms_norm_q31.c:82:17: style: Variable 'e' is assigned a value that is never used. [unreadVariable]
+        q31_t e = 0;                                   /* Error data sample */
+                ^
+Source/FilteringFunctions/arm_lms_norm_q31.c:83:17: style: Variable 'w' is assigned a value that is never used. [unreadVariable]
+        q31_t w = 0, in;                               /* Weight factor and state */
+                ^
+Source/FilteringFunctions/arm_lms_q15.c:78:17: style: Variable 'e' is assigned a value that is never used. [unreadVariable]
+        q15_t e = 0;                                   /* Error of data sample */
+                ^
+Source/FilteringFunctions/arm_lms_q31.c:82:17: style: Variable 'e' is assigned a value that is never used. [unreadVariable]
+        q31_t e = 0;                                   /* Error of data sample */
+                ^
+Source/FilteringFunctions/arm_conv_partial_q15.c:474:12: style: Variable 'px' is reassigned a value before the old one has been used. [redundantAssignment]
+        px = pSrc1 + count;
+           ^
+Source/FilteringFunctions/arm_conv_partial_q15.c:446:14: note: px is assigned
+          px += 3U;
+             ^
+Source/FilteringFunctions/arm_conv_partial_q15.c:474:12: note: px is overwritten
+        px = pSrc1 + count;
+           ^
+Source/FilteringFunctions/arm_conv_q15.c:606:10: style: Variable 'px' is reassigned a value before the old one has been used. [redundantAssignment]
+      px = pIn1 + count;
+         ^
+Source/FilteringFunctions/arm_conv_q15.c:579:12: note: px is assigned
+        px += 3U;
+           ^
+Source/FilteringFunctions/arm_conv_q15.c:606:10: note: px is overwritten
+      px = pIn1 + count;
+         ^
+Source/FilteringFunctions/arm_correlate_q15.c:635:10: style: Variable 'px' is reassigned a value before the old one has been used. [redundantAssignment]
+      px = pIn1 + count;
+         ^
+Source/FilteringFunctions/arm_correlate_q15.c:608:12: note: px is assigned
+        px += 3U;
+           ^
+Source/FilteringFunctions/arm_correlate_q15.c:635:10: note: px is overwritten
+      px = pIn1 + count;
+         ^
+Source/FilteringFunctions/arm_conv_f32.c:476:3: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+  if (srcBLen >= 4U)
+  ^
+Source/FilteringFunctions/arm_conv_f32.c:786:3: note: Found duplicate branches for 'if' and 'else'.
+  else
+  ^
+Source/FilteringFunctions/arm_conv_f32.c:476:3: note: Found duplicate branches for 'if' and 'else'.
+  if (srcBLen >= 4U)
+  ^
+Source/FilteringFunctions/arm_conv_partial_f32.c:96:25: style: Variable 'pIn1' is assigned a value that is never used. [unreadVariable]
+  const float32_t *pIn1 = pSrcA;                       /* InputA pointer */
+                        ^
+Source/FilteringFunctions/arm_conv_partial_f32.c:97:25: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+  const float32_t *pIn2 = pSrcB;                       /* InputB pointer */
+                        ^
+Source/FilteringFunctions/arm_conv_partial_f32.c:98:25: style: Variable 'pOut' is assigned a value that is never used. [unreadVariable]
+        float32_t *pOut = pDst;                        /* Output pointer */
+                        ^
+Source/FilteringFunctions/arm_conv_partial_q15.c:73:21: style: Variable 'pOut' is assigned a value that is never used. [unreadVariable]
+        q15_t *pOut = pDst;                            /* Output pointer */
+                    ^
+Source/FilteringFunctions/arm_conv_partial_q31.c:71:21: style: Variable 'pOut' is assigned a value that is never used. [unreadVariable]
+        q31_t *pOut = pDst;                            /* Output pointer */
+                    ^
+Source/FilteringFunctions/arm_conv_partial_q7.c:71:20: style: Variable 'pOut' is assigned a value that is never used. [unreadVariable]
+        q7_t *pOut = pDst;                             /* Output pointer */
+                   ^
+Source/FilteringFunctions/arm_iir_lattice_q15.c:65:28: style: Variable 'fnext' is assigned a value that is never used. [unreadVariable]
+        q31_t fcurr, fnext = 0, gcurr = 0, gnext;      /* Temporary variables for lattice stages */
+                           ^
+Source/FilteringFunctions/arm_iir_lattice_q31.c:64:28: style: Variable 'fnext' is assigned a value that is never used. [unreadVariable]
+        q31_t fcurr, fnext = 0, gcurr = 0, gnext;        /* Temporary variables for lattice stages */
+                           ^
+Source/FilteringFunctions/arm_conv_f32.c:368:7: style: Variable 'k' is reassigned a value before the old one has been used. [redundantAssignment]
+    k = count >> 2U;
+      ^
+Source/FilteringFunctions/arm_conv_f32.c:361:7: note: k is assigned
+    k = count >> 2U;
+      ^
+Source/FilteringFunctions/arm_conv_f32.c:368:7: note: k is overwritten
+    k = count >> 2U;
+      ^
+Source/FilteringFunctions/arm_conv_f32.c:390:11: style: Variable 'accum' is reassigned a value before the old one has been used. [redundantAssignment]
+    accum = vpadd_f32(vget_low_f32(res), vget_high_f32(res));
+          ^
+Source/FilteringFunctions/arm_conv_f32.c:365:11: note: accum is assigned
+    accum = vdup_n_f32(0);
+          ^
+Source/FilteringFunctions/arm_conv_f32.c:390:11: note: accum is overwritten
+    accum = vpadd_f32(vget_low_f32(res), vget_high_f32(res));
+          ^
+Source/FilteringFunctions/arm_conv_f32.c:733:13: style: Redundant initialization for 'accum'. The initialized value is overwritten before it is read. [redundantInitialization]
+      accum = vpadd_f32(vget_low_f32(res), vget_high_f32(res));
+            ^
+Source/FilteringFunctions/arm_conv_f32.c:712:25: note: accum is initialized
+      float32x2_t accum = vdup_n_f32(0) ;
+                        ^
+Source/FilteringFunctions/arm_conv_f32.c:733:13: note: accum is overwritten
+      accum = vpadd_f32(vget_low_f32(res), vget_high_f32(res));
+            ^
+Source/FilteringFunctions/arm_conv_f32.c:882:11: style: Redundant initialization for 'accum'. The initialized value is overwritten before it is read. [redundantInitialization]
+    accum = vpadd_f32(vget_low_f32(res), vget_high_f32(res));
+          ^
+Source/FilteringFunctions/arm_conv_f32.c:863:23: note: accum is initialized
+    float32x2_t accum = vdup_n_f32(0) ;
+                      ^
+Source/FilteringFunctions/arm_conv_f32.c:882:11: note: accum is overwritten
+    accum = vpadd_f32(vget_low_f32(res), vget_high_f32(res));
+          ^
+Source/FilteringFunctions/arm_fir_decimate_f32.c:386:14: style: The scope of the variable 'px' can be reduced. [variableScope]
+  float32_t *px;                                 /* Temporary pointer for state buffer */
+             ^
+Source/FilteringFunctions/arm_fir_decimate_f32.c:394:14: style: The scope of the variable 'px0' can be reduced. [variableScope]
+  float32_t *px0, *px1, *px2, *px3;
+             ^
+Source/FilteringFunctions/arm_fir_decimate_f32.c:394:20: style: The scope of the variable 'px1' can be reduced. [variableScope]
+  float32_t *px0, *px1, *px2, *px3;
+                   ^
+Source/FilteringFunctions/arm_fir_decimate_f32.c:394:26: style: The scope of the variable 'px2' can be reduced. [variableScope]
+  float32_t *px0, *px1, *px2, *px3;
+                         ^
+Source/FilteringFunctions/arm_fir_decimate_f32.c:394:32: style: The scope of the variable 'px3' can be reduced. [variableScope]
+  float32_t *px0, *px1, *px2, *px3;
+                               ^
+Source/FilteringFunctions/arm_lms_f32.c:177:14: style: The scope of the variable 'px' can be reduced. [variableScope]
+  float32_t *px, *pb;                            /* Temporary pointers for state and coefficient buffers */
+             ^
+Source/FilteringFunctions/arm_lms_f32.c:177:19: style: The scope of the variable 'pb' can be reduced. [variableScope]
+  float32_t *px, *pb;                            /* Temporary pointers for state and coefficient buffers */
+                  ^
+Source/FilteringFunctions/arm_lms_norm_f32.c:171:14: style: The scope of the variable 'px' can be reduced. [variableScope]
+  float32_t *px, *pb;                            /* Temporary pointers for state and coefficient buffers */
+             ^
+Source/FilteringFunctions/arm_lms_norm_f32.c:171:19: style: The scope of the variable 'pb' can be reduced. [variableScope]
+  float32_t *px, *pb;                            /* Temporary pointers for state and coefficient buffers */
+                  ^
+Source/FilteringFunctions/arm_conv_f32.c:484:19: style: Local variable 'res' shadows outer variable [shadowVariable]
+      float32x4_t res = vdupq_n_f32(0) ;
+                  ^
+Source/FilteringFunctions/arm_conv_f32.c:349:17: note: Shadowed declaration
+    float32x4_t res = vdupq_n_f32(0) ;
+                ^
+Source/FilteringFunctions/arm_conv_f32.c:484:19: note: Shadow variable
+      float32x4_t res = vdupq_n_f32(0) ;
+                  ^
+Source/FilteringFunctions/arm_conv_f32.c:709:19: style: Local variable 'res' shadows outer variable [shadowVariable]
+      float32x4_t res = vdupq_n_f32(0) ;
+                  ^
+Source/FilteringFunctions/arm_conv_f32.c:484:19: note: Shadowed declaration
+      float32x4_t res = vdupq_n_f32(0) ;
+                  ^
+Source/FilteringFunctions/arm_conv_f32.c:709:19: note: Shadow variable
+      float32x4_t res = vdupq_n_f32(0) ;
+                  ^
+Source/FilteringFunctions/arm_conv_f32.c:710:19: style: Local variable 'x' shadows outer variable [shadowVariable]
+      float32x4_t x = vdupq_n_f32(0) ;
+                  ^
+Source/FilteringFunctions/arm_conv_f32.c:483:19: note: Shadowed declaration
+      float32x4_t x;
+                  ^
+Source/FilteringFunctions/arm_conv_f32.c:710:19: note: Shadow variable
+      float32x4_t x = vdupq_n_f32(0) ;
+                  ^
+Source/FilteringFunctions/arm_conv_f32.c:712:19: style: Local variable 'accum' shadows outer variable [shadowVariable]
+      float32x2_t accum = vdup_n_f32(0) ;
+                  ^
+Source/FilteringFunctions/arm_conv_f32.c:350:17: note: Shadowed declaration
+    float32x2_t accum = vdup_n_f32(0);
+                ^
+Source/FilteringFunctions/arm_conv_f32.c:712:19: note: Shadow variable
+      float32x2_t accum = vdup_n_f32(0) ;
+                  ^
+Source/FilteringFunctions/arm_conv_f32.c:860:17: style: Local variable 'res' shadows outer variable [shadowVariable]
+    float32x4_t res = vdupq_n_f32(0) ;
+                ^
+Source/FilteringFunctions/arm_conv_f32.c:349:17: note: Shadowed declaration
+    float32x4_t res = vdupq_n_f32(0) ;
+                ^
+Source/FilteringFunctions/arm_conv_f32.c:860:17: note: Shadow variable
+    float32x4_t res = vdupq_n_f32(0) ;
+                ^
+Source/FilteringFunctions/arm_conv_f32.c:863:17: style: Local variable 'accum' shadows outer variable [shadowVariable]
+    float32x2_t accum = vdup_n_f32(0) ;
+                ^
+Source/FilteringFunctions/arm_conv_f32.c:350:17: note: Shadowed declaration
+    float32x2_t accum = vdup_n_f32(0);
+                ^
+Source/FilteringFunctions/arm_conv_f32.c:863:17: note: Shadow variable
+    float32x2_t accum = vdup_n_f32(0) ;
+                ^
+Source/FilteringFunctions/arm_conv_f32.c:349:21: style: Variable 'res' is assigned a value that is never used. [unreadVariable]
+    float32x4_t res = vdupq_n_f32(0) ;
+                    ^
+Source/FilteringFunctions/arm_conv_f32.c:350:23: style: Variable 'accum' is assigned a value that is never used. [unreadVariable]
+    float32x2_t accum = vdup_n_f32(0);
+                      ^
+Source/FilteringFunctions/arm_conv_f32.c:484:23: style: Variable 'res' is assigned a value that is never used. [unreadVariable]
+      float32x4_t res = vdupq_n_f32(0) ;
+                      ^
+Source/FilteringFunctions/arm_fir_interpolate_f32.c:623:19: style: Variable 'ptr2' is assigned a value that is never used. [unreadVariable]
+             ptr2 += S->L;
+                  ^
+Source/FilteringFunctions/arm_fir_interpolate_f32.c:640:19: style: Variable 'ptr2' is assigned a value that is never used. [unreadVariable]
+             ptr2 += S->L;
+                  ^
+Source/FilteringFunctions/arm_fir_interpolate_f32.c:648:19: style: Variable 'ptr2' is assigned a value that is never used. [unreadVariable]
+             ptr2 += S->L;
+                  ^
+Source/FilteringFunctions/arm_lms_f32.c:182:15: style: Variable 'w' is assigned a value that is never used. [unreadVariable]
+  float32_t w = 0.0f;                            /* weight factor */
+              ^
+Source/FilteringFunctions/arm_lms_f32.c:187:5: style: Variable 'e' is assigned a value that is never used. [unreadVariable]
+  e = 0.0f;
+    ^
+Source/FilteringFunctions/arm_lms_f32.c:188:5: style: Variable 'd' is assigned a value that is never used. [unreadVariable]
+  d = 0.0f;
+    ^
+Source/FilteringFunctions/arm_lms_norm_f32.c:183:5: style: Variable 'e' is assigned a value that is never used. [unreadVariable]
+  e = 0.0f;
+    ^
+Source/FilteringFunctions/arm_lms_norm_f32.c:184:5: style: Variable 'd' is assigned a value that is never used. [unreadVariable]
+  d = 0.0f;
+    ^
+Source/FilteringFunctions/arm_lms_norm_f32.c:185:5: style: Variable 'w' is assigned a value that is never used. [unreadVariable]
+  w = 0.0f;
+    ^
+Source/FilteringFunctions/arm_biquad_cascade_df2T_f64.c:159:15: style: The scope of the variable 'sample' can be reduced. [variableScope]
+    uint32_t  sample, stage = S->numStages; /*  loop counters             */
+              ^
+Source/FilteringFunctions/arm_fir_f64.c:58:16: style: The scope of the variable 'px' can be reduced. [variableScope]
+    float64_t *px;                                 /* Temporary pointer for state buffer */
+               ^
+Source/FilteringFunctions/arm_fir_f64.c:59:22: style: The scope of the variable 'pb' can be reduced. [variableScope]
+    const float64_t *pb;                                 /* Temporary pointer for coefficient buffer */
+                     ^
+Source/FilteringFunctions/arm_fir_f64.c:65:14: style: The scope of the variable 'i' can be reduced. [variableScope]
+    uint32_t i, tapCnt, blkCnt;                    /* Loop counters */
+             ^
+Source/MatrixFunctions/MatrixFunctions.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 23 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+Source/MatrixFunctions/arm_mat_vec_mult_f32.c:298:22: style: The scope of the variable 'pInA4' can be reduced. [variableScope]
+    const float32_t *pInA4;      /* input data matrix pointer A of Q31 type */
+                     ^
+Source/MatrixFunctions/arm_mat_vec_mult_q31.c:274:18: style: The scope of the variable 'pInA4' can be reduced. [variableScope]
+    const q31_t *pInA4;      /* input data matrix pointer A of Q31 type */
+                 ^
+Source/MatrixFunctions/arm_mat_qr_f32.c:626:11: style: The scope of the variable 'nb' can be reduced. [variableScope]
+  int32_t nb,pos;
+          ^
+Source/MatrixFunctions/arm_mat_qr_f32.c:626:14: style: The scope of the variable 'pos' can be reduced. [variableScope]
+  int32_t nb,pos;
+             ^
+Source/MatrixFunctions/arm_mat_qr_f64.c:84:11: style: The scope of the variable 'nb' can be reduced. [variableScope]
+  int32_t nb,pos;
+          ^
+Source/MatrixFunctions/arm_mat_qr_f64.c:84:14: style: The scope of the variable 'pos' can be reduced. [variableScope]
+  int32_t nb,pos;
+             ^
+Source/MatrixFunctions/arm_mat_cmplx_mult_f32.c:1186:19: style: Variable 'pIn1' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn1 = pSrcA->pData;                /* Input data matrix pointer A */
+                  ^
+Source/MatrixFunctions/arm_mat_cmplx_mult_f32.c:1187:19: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn2 = pSrcB->pData;                /* Input data matrix pointer B */
+                  ^
+Source/MatrixFunctions/arm_mat_cmplx_mult_q15.c:322:21: style: Variable 'pInA' is assigned a value that is never used. [unreadVariable]
+        q15_t *pInA = pSrcA->pData;                    /* input data matrix pointer A of Q15 type */
+                    ^
+Source/MatrixFunctions/arm_mat_cmplx_mult_q31.c:842:15: style: Variable 'pIn1' is assigned a value that is never used. [unreadVariable]
+  q31_t *pIn1 = pSrcA->pData;                    /* Input data matrix pointer A */
+              ^
+Source/MatrixFunctions/arm_mat_cmplx_mult_q31.c:843:15: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+  q31_t *pIn2 = pSrcB->pData;                    /* Input data matrix pointer B */
+              ^
+Source/MatrixFunctions/arm_mat_inverse_f32.c:91:18: style: Variable 'pIn' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn = pSrc->pData;                  /* input data matrix pointer */
+                 ^
+Source/MatrixFunctions/arm_mat_inverse_f32.c:99:35: style: Variable 'newPivot' is assigned a value that is never used. [unreadVariable]
+  float32_t pivot = 0.0f, newPivot=0.0f;                /* Temporary input values  */
+                                  ^
+Source/MatrixFunctions/arm_mat_inverse_f64.c:56:18: style: Variable 'pIn' is assigned a value that is never used. [unreadVariable]
+  float64_t *pIn = pSrc->pData;                  /* input data matrix pointer */
+                 ^
+Source/MatrixFunctions/arm_mat_inverse_f64.c:64:34: style: Variable 'newPivot' is assigned a value that is never used. [unreadVariable]
+  float64_t pivot = 0.0, newPivot=0.0;                /* Temporary input values  */
+                                 ^
+Source/MatrixFunctions/arm_mat_mult_f64.c:381:19: style: Variable 'pIn1' is assigned a value that is never used. [unreadVariable]
+  float64_t *pIn1 = pSrcA->pData;                /* Input data matrix pointer A */
+                  ^
+Source/MatrixFunctions/arm_mat_mult_f64.c:382:19: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+  float64_t *pIn2 = pSrcB->pData;                /* Input data matrix pointer B */
+                  ^
+Source/MatrixFunctions/arm_mat_mult_f32.c:889:19: style: Variable 'pIn1' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn1 = pSrcA->pData;                /* Input data matrix pointer A */
+                  ^
+Source/MatrixFunctions/arm_mat_mult_f32.c:890:19: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn2 = pSrcB->pData;                /* Input data matrix pointer B */
+                  ^
+Source/MatrixFunctions/arm_mat_mult_fast_q15.c:75:21: style: Variable 'pInA' is assigned a value that is never used. [unreadVariable]
+        q15_t *pInA = pSrcA->pData;                    /* Input data matrix pointer A of Q15 type */
+                    ^
+Source/MatrixFunctions/arm_mat_mult_fast_q31.c:71:15: style: Variable 'pInA' is assigned a value that is never used. [unreadVariable]
+  q31_t *pInA = pSrcA->pData;                    /* Input data matrix pointer A */
+              ^
+Source/MatrixFunctions/arm_mat_mult_fast_q31.c:72:15: style: Variable 'pInB' is assigned a value that is never used. [unreadVariable]
+  q31_t *pInB = pSrcB->pData;                    /* Input data matrix pointer B */
+              ^
+Source/MatrixFunctions/arm_mat_mult_fast_q31.c:113:12: style: Variable 'pInB' is assigned a value that is never used. [unreadVariable]
+      pInB = pSrcB->pData;
+           ^
+Source/MatrixFunctions/arm_mat_mult_q7.c:582:16: style: Variable 'pIn1' is assigned a value that is never used. [unreadVariable]
+    q7_t *pIn1 = pSrcA->pData;                    /* input data matrix pointer A */
+               ^
+Source/MatrixFunctions/arm_mat_mult_q7.c:583:16: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+    q7_t *pIn2 = pSrcB->pData;                    /* input data matrix pointer B */
+               ^
+Source/MatrixFunctions/arm_mat_mult_q15.c:745:21: style: Variable 'pIn1' is assigned a value that is never used. [unreadVariable]
+        q15_t *pIn1 = pSrcA->pData;                    /* Input data matrix pointer A */
+                    ^
+Source/MatrixFunctions/arm_mat_mult_q15.c:746:21: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+        q15_t *pIn2 = pSrcB->pData;                    /* Input data matrix pointer B */
+                    ^
+Source/MatrixFunctions/arm_mat_mult_q31.c:631:15: style: Variable 'pIn1' is assigned a value that is never used. [unreadVariable]
+  q31_t *pIn1 = pSrcA->pData;                    /* Input data matrix pointer A */
+              ^
+Source/MatrixFunctions/arm_mat_mult_q31.c:632:15: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+  q31_t *pIn2 = pSrcB->pData;                    /* Input data matrix pointer B */
+              ^
+Source/MatrixFunctions/arm_mat_mult_opt_q31.c:654:15: style: Variable 'pIn1' is assigned a value that is never used. [unreadVariable]
+  q31_t *pIn1 = pSrcA->pData;                    /* Input data matrix pointer A */
+              ^
+Source/MatrixFunctions/arm_mat_mult_opt_q31.c:655:15: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+  q31_t *pIn2 = pSrcB->pData;                    /* Input data matrix pointer B */
+              ^
+Source/MatrixFunctions/arm_mat_trans_q7.c:116:16: style: Variable 'pOut' is assigned a value that is never used. [unreadVariable]
+    q7_t *pOut = pDst->pData;          /* output data matrix pointer */
+               ^
+Source/MatrixFunctions/arm_mat_trans_q15.c:104:21: style: Variable 'pOut' is assigned a value that is never used. [unreadVariable]
+        q15_t *pOut = pDst->pData;                     /* output data matrix pointer */
+                    ^
+Source/MatrixFunctions/arm_mat_vec_mult_q15.c:331:16: style: Variable 'colCnt' is assigned a value that is never used. [unreadVariable]
+        colCnt = numCols & 1u;
+               ^
+Source/MatrixFunctions/arm_mat_cmplx_trans_q15.c:65:15: style: Variable 'pOut' is assigned a value that is never used. [unreadVariable]
+  q15_t *pOut = pDst->pData;                     /* output data matrix pointer */
+              ^
+Source/MatrixFunctions/arm_mat_cmplx_mult_f32.c:844:19: style: Variable 'pIn1' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn1 = pSrcA->pData;                /* input data matrix pointer A */
+                  ^
+Source/MatrixFunctions/arm_mat_cmplx_mult_f32.c:845:19: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn2 = pSrcB->pData;                /* input data matrix pointer B */
+                  ^
+Source/MatrixFunctions/arm_mat_cmplx_mult_f32.c:859:21: style: Variable 'accum' is assigned a value that is never used. [unreadVariable]
+  float32x2_t accum = vdup_n_f32(0);
+                    ^
+Source/MatrixFunctions/arm_mat_cmplx_mult_f32.c:860:20: style: Variable 'pIn1B' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn1B = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_f32.c:553:19: style: Variable 'pIn1' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn1 = pSrcA->pData;                /* input data matrix pointer A */
+                  ^
+Source/MatrixFunctions/arm_mat_mult_f32.c:554:19: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn2 = pSrcB->pData;                /* input data matrix pointer B */
+                  ^
+Source/MatrixFunctions/arm_mat_mult_f32.c:569:21: style: Variable 'accum' is assigned a value that is never used. [unreadVariable]
+  float32x2_t accum = vdup_n_f32(0);
+                    ^
+Source/MatrixFunctions/arm_mat_mult_f32.c:570:20: style: Variable 'pIn1B' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn1B = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_f32.c:571:20: style: Variable 'pIn1C' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn1C = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_f32.c:572:20: style: Variable 'pIn1D' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn1D = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_f32.c:573:20: style: Variable 'pIn1E' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn1E = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_f32.c:574:20: style: Variable 'pIn1F' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn1F = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_f32.c:575:20: style: Variable 'pIn1G' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn1G = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_f32.c:576:20: style: Variable 'pIn1H' is assigned a value that is never used. [unreadVariable]
+  float32_t *pIn1H = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_trans_f64.c:89:24: style: The scope of the variable 'row0' can be reduced. [variableScope]
+            float64_t *row0,*row1;
+                       ^
+Source/MatrixFunctions/arm_mat_trans_f64.c:89:30: style: The scope of the variable 'row1' can be reduced. [variableScope]
+            float64_t *row0,*row1;
+                             ^
+Source/MatrixFunctions/arm_mat_mult_f64.c:75:19: style: Variable 'pIn1' is assigned a value that is never used. [unreadVariable]
+  float64_t *pIn1 = pSrcA->pData;                /* input data matrix pointer A */
+                  ^
+Source/MatrixFunctions/arm_mat_mult_f64.c:76:19: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+  float64_t *pIn2 = pSrcB->pData;                /* input data matrix pointer B */
+                  ^
+Source/MatrixFunctions/arm_mat_mult_f64.c:91:20: style: Variable 'pIn1B' is assigned a value that is never used. [unreadVariable]
+  float64_t *pIn1B = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_f64.c:92:20: style: Variable 'pIn1C' is assigned a value that is never used. [unreadVariable]
+  float64_t *pIn1C = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_f64.c:93:20: style: Variable 'pIn1D' is assigned a value that is never used. [unreadVariable]
+  float64_t *pIn1D = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_f64.c:94:20: style: Variable 'pIn1E' is assigned a value that is never used. [unreadVariable]
+  float64_t *pIn1E = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_f64.c:95:20: style: Variable 'pIn1F' is assigned a value that is never used. [unreadVariable]
+  float64_t *pIn1F = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_f64.c:96:20: style: Variable 'pIn1G' is assigned a value that is never used. [unreadVariable]
+  float64_t *pIn1G = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_f64.c:97:20: style: Variable 'pIn1H' is assigned a value that is never used. [unreadVariable]
+  float64_t *pIn1H = pSrcA->pData;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_q15.c:669:9: style: Redundant initialization for 'row'. The initialized value is overwritten before it is read. [redundantInitialization]
+    row = numRowsA;
+        ^
+Source/MatrixFunctions/arm_mat_mult_q15.c:642:35: note: row is initialized
+        uint32_t col, i = 0U, row = numRowsB, colCnt;  /* Loop counters */
+                                  ^
+Source/MatrixFunctions/arm_mat_mult_q15.c:669:9: note: row is overwritten
+    row = numRowsA;
+        ^
+Source/MatrixFunctions/arm_mat_mult_fast_q15.c:90:20: style: Variable 'j' is assigned a value that is never used. [unreadVariable]
+        uint32_t j = 0;
+                   ^
+Source/MatrixFunctions/arm_mat_mult_fast_q15.c:427:9: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+      i = 0U;
+        ^
+Source/MatrixFunctions/arm_mat_mult_q15.c:635:21: style: Variable 'pInA' is assigned a value that is never used. [unreadVariable]
+        q15_t *pInA = pSrcA->pData;                    /* Input data matrix pointer A of Q15 type */
+                    ^
+Source/MatrixFunctions/arm_mat_mult_q15.c:636:21: style: Variable 'pInB' is assigned a value that is never used. [unreadVariable]
+        q15_t *pInB = pSrcB->pData;                    /* Input data matrix pointer B of Q15 type */
+                    ^
+Source/MatrixFunctions/arm_mat_vec_mult_f16.c:293:22: style: The scope of the variable 'pInA4' can be reduced. [variableScope]
+    const float16_t *pInA4;      /* input data matrix pointer A of Q31 type */
+                     ^
+Source/MatrixFunctions/arm_mat_qr_f16.c:555:11: style: The scope of the variable 'nb' can be reduced. [variableScope]
+  int32_t nb,pos;
+          ^
+Source/MatrixFunctions/arm_mat_qr_f16.c:555:14: style: The scope of the variable 'pos' can be reduced. [variableScope]
+  int32_t nb,pos;
+             ^
+Source/MatrixFunctions/arm_mat_mult_f16.c:629:19: style: Variable 'pIn1' is assigned a value that is never used. [unreadVariable]
+  float16_t *pIn1 = pSrcA->pData;                /* Input data matrix pointer A */
+                  ^
+Source/MatrixFunctions/arm_mat_mult_f16.c:630:19: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+  float16_t *pIn2 = pSrcB->pData;                /* Input data matrix pointer B */
+                  ^
+Source/MatrixFunctions/arm_mat_cmplx_mult_f16.c:712:19: style: Variable 'pIn1' is assigned a value that is never used. [unreadVariable]
+  float16_t *pIn1 = pSrcA->pData;                /* Input data matrix pointer A */
+                  ^
+Source/MatrixFunctions/arm_mat_cmplx_mult_f16.c:713:19: style: Variable 'pIn2' is assigned a value that is never used. [unreadVariable]
+  float16_t *pIn2 = pSrcB->pData;                /* Input data matrix pointer B */
+                  ^
+Source/MatrixFunctions/arm_mat_inverse_f16.c:58:18: style: Variable 'pIn' is assigned a value that is never used. [unreadVariable]
+  float16_t *pIn = pSrc->pData;                  /* input data matrix pointer */
+                 ^
+Source/MatrixFunctions/arm_mat_inverse_f16.c:66:37: style: Variable 'newPivot' is assigned a value that is never used. [unreadVariable]
+  float16_t pivot = 0.0f16, newPivot=0.0f16;                /* Temporary input values  */
+                                    ^
+Source/MatrixFunctions/arm_mat_mult_q15.c:642:25: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+        uint32_t col, i = 0U, row = numRowsB, colCnt;  /* Loop counters */
+                        ^
+Source/MatrixFunctions/arm_mat_mult_q15.c:642:35: style: Variable 'row' is assigned a value that is never used. [unreadVariable]
+        uint32_t col, i = 0U, row = numRowsB, colCnt;  /* Loop counters */
+                                  ^
+Source/SVMFunctions/arm_svm_linear_predict_f32.c:441:18: style: Variable 'dot' is assigned a value that is never used. [unreadVariable]
+    float32_t dot=0;
+                 ^
+Source/SVMFunctions/arm_svm_polynomial_predict_f32.c:468:18: style: Variable 'dot' is assigned a value that is never used. [unreadVariable]
+    float32_t dot=0;
+                 ^
+Source/SVMFunctions/arm_svm_rbf_predict_f32.c:501:18: style: Variable 'dot' is assigned a value that is never used. [unreadVariable]
+    float32_t dot=0;
+                 ^
+Source/SVMFunctions/arm_svm_sigmoid_predict_f32.c:466:18: style: Variable 'dot' is assigned a value that is never used. [unreadVariable]
+    float32_t dot=0;
+                 ^
+Source/SVMFunctions/arm_svm_linear_predict_f32.c:395:14: style: Redundant initialization for 'pSupport'. The initialized value is overwritten before it is read. [redundantInitialization]
+    pSupport = pSupporta;
+             ^
+Source/SVMFunctions/arm_svm_linear_predict_f32.c:307:31: note: pSupport is initialized
+    const float32_t *pSupport = S->supportVectors;
+                              ^
+Source/SVMFunctions/arm_svm_linear_predict_f32.c:395:14: note: pSupport is overwritten
+    pSupport = pSupporta;
+             ^
+Source/SVMFunctions/arm_svm_polynomial_predict_f32.c:421:14: style: Redundant initialization for 'pSupport'. The initialized value is overwritten before it is read. [redundantInitialization]
+    pSupport = pSupporta;
+             ^
+Source/SVMFunctions/arm_svm_polynomial_predict_f32.c:328:31: note: pSupport is initialized
+    const float32_t *pSupport = S->supportVectors;
+                              ^
+Source/SVMFunctions/arm_svm_polynomial_predict_f32.c:421:14: note: pSupport is overwritten
+    pSupport = pSupporta;
+             ^
+Source/SVMFunctions/arm_svm_rbf_predict_f32.c:450:14: style: Redundant initialization for 'pSupport'. The initialized value is overwritten before it is read. [redundantInitialization]
+    pSupport = pSupporta;
+             ^
+Source/SVMFunctions/arm_svm_rbf_predict_f32.c:346:31: note: pSupport is initialized
+    const float32_t *pSupport = S->supportVectors;
+                              ^
+Source/SVMFunctions/arm_svm_rbf_predict_f32.c:450:14: note: pSupport is overwritten
+    pSupport = pSupporta;
+             ^
+Source/SVMFunctions/arm_svm_sigmoid_predict_f32.c:419:14: style: Redundant initialization for 'pSupport'. The initialized value is overwritten before it is read. [redundantInitialization]
+    pSupport = pSupporta;
+             ^
+Source/SVMFunctions/arm_svm_sigmoid_predict_f32.c:326:31: note: pSupport is initialized
+    const float32_t *pSupport = S->supportVectors;
+                              ^
+Source/SVMFunctions/arm_svm_sigmoid_predict_f32.c:419:14: note: pSupport is overwritten
+    pSupport = pSupporta;
+             ^
+Source/SVMFunctions/arm_svm_linear_predict_f32.c:305:26: style: Variable 'pIn' is assigned a value that is never used. [unreadVariable]
+    const float32_t *pIn = in;
+                         ^
+Source/SVMFunctions/arm_svm_polynomial_predict_f32.c:326:26: style: Variable 'pIn' is assigned a value that is never used. [unreadVariable]
+    const float32_t *pIn = in;
+                         ^
+Source/SVMFunctions/arm_svm_rbf_predict_f32.c:344:26: style: Variable 'pIn' is assigned a value that is never used. [unreadVariable]
+    const float32_t *pIn = in;
+                         ^
+Source/SVMFunctions/arm_svm_sigmoid_predict_f32.c:324:26: style: Variable 'pIn' is assigned a value that is never used. [unreadVariable]
+    const float32_t *pIn = in;
+                         ^
+Source/SVMFunctions/arm_svm_linear_predict_f16.c:292:17: style: Variable 'dot' is assigned a value that is never used. [unreadVariable]
+    _Float16 dot=0;
+                ^
+Source/SVMFunctions/arm_svm_polynomial_predict_f16.c:345:17: style: Variable 'dot' is assigned a value that is never used. [unreadVariable]
+    _Float16 dot=0;
+                ^
+Source/SVMFunctions/arm_svm_rbf_predict_f16.c:328:17: style: Variable 'dot' is assigned a value that is never used. [unreadVariable]
+    _Float16 dot=00.f16;
+                ^
+Source/SVMFunctions/arm_svm_sigmoid_predict_f16.c:310:17: style: Variable 'dot' is assigned a value that is never used. [unreadVariable]
+    _Float16 dot=0.0f16;
+                ^
+Source/StatisticsFunctions/StatisticsFunctions.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 17 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+Source/SupportFunctions/SupportFunctions.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 14 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+Source/SupportFunctions/arm_quick_sort_f32.c:67:26: style: Array index 'i' is used before limits check. [arrayIndexThenCheck]
+            } while (pSrc[i] < pivot && i<last);
+                         ^
+Source/SupportFunctions/arm_quick_sort_f32.c:81:26: style: Array index 'i' is used before limits check. [arrayIndexThenCheck]
+            } while (pSrc[i] > pivot && i<last);
+                         ^
+Source/SupportFunctions/arm_barycenter_f32.c:370:17: style: Variable 'blkCntSample' is reassigned a value before the old one has been used. [redundantAssignment]
+   blkCntSample = vecDim;
+                ^
+Source/SupportFunctions/arm_barycenter_f32.c:362:17: note: blkCntSample is assigned
+   blkCntSample = vecDim;
+                ^
+Source/SupportFunctions/arm_barycenter_f32.c:370:17: note: blkCntSample is overwritten
+   blkCntSample = vecDim;
+                ^
+Source/SupportFunctions/arm_selection_sort_f32.c:65:20: style: The scope of the variable 'k' can be reduced. [variableScope]
+    uint32_t i, j, k;
+                   ^
+Source/SupportFunctions/arm_barycenter_f32.c:245:17: style: Variable 'blkCntVector' is reassigned a value before the old one has been used. [redundantAssignment]
+   blkCntVector = nbVectors >> 2;
+                ^
+Source/SupportFunctions/arm_barycenter_f32.c:210:17: note: blkCntVector is assigned
+   blkCntVector = nbVectors;
+                ^
+Source/SupportFunctions/arm_barycenter_f32.c:245:17: note: blkCntVector is overwritten
+   blkCntVector = nbVectors >> 2;
+                ^
+Source/SupportFunctions/arm_barycenter_f32.c:222:17: style: Variable 'blkCntSample' is reassigned a value before the old one has been used. [redundantAssignment]
+   blkCntSample = vecDim >> 2;
+                ^
+Source/SupportFunctions/arm_barycenter_f32.c:211:17: note: blkCntSample is assigned
+   blkCntSample = vecDim;
+                ^
+Source/SupportFunctions/arm_barycenter_f32.c:222:17: note: blkCntSample is overwritten
+   blkCntSample = vecDim >> 2;
+                ^
+Source/SupportFunctions/arm_bitonic_sort_f32.c:924:17: style: The scope of the variable 'pOut' can be reduced. [variableScope]
+    float32_t * pOut;
+                ^
+Source/SupportFunctions/arm_bitonic_sort_f32.c:938:8: style: Variable 'pOut' is assigned a value that is never used. [unreadVariable]
+  pOut = pSrc;
+       ^
+Source/SupportFunctions/arm_bitonic_sort_f32.c:950:8: style: Variable 'pOut' is assigned a value that is never used. [unreadVariable]
+  pOut = pSrc;
+       ^
+Source/SupportFunctions/arm_bitonic_sort_f32.c:918:14: style: Variable 's' is not assigned a value. [unassignedVariable]
+    uint16_t s, i;
+             ^
+Source/SupportFunctions/arm_barycenter_f16.c:227:17: style: Variable 'blkCntSample' is reassigned a value before the old one has been used. [redundantAssignment]
+   blkCntSample = vecDim;
+                ^
+Source/SupportFunctions/arm_barycenter_f16.c:219:17: note: blkCntSample is assigned
+   blkCntSample = vecDim;
+                ^
+Source/SupportFunctions/arm_barycenter_f16.c:227:17: note: blkCntSample is overwritten
+   blkCntSample = vecDim;
+                ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:387:3: style: Assignment of function parameter has no effect outside the function. [uselessAssignmentArg]
+  twidCoefModifier = twidCoefModifier << 1U;
+  ^
+Source/TransformFunctions/arm_cfft_radix2_q31.c:174:7: style: Variable 'n1' is reassigned a value before the old one has been used. [redundantAssignment]
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix2_q31.c:101:7: note: n1 is assigned
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix2_q31.c:174:7: note: n1 is overwritten
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix2_q31.c:297:7: style: Variable 'n1' is reassigned a value before the old one has been used. [redundantAssignment]
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix2_q31.c:229:7: note: n1 is assigned
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix2_q31.c:297:7: note: n1 is overwritten
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix4_f32.c:1116:7: style: Variable 'n1' is reassigned a value before the old one has been used. [redundantAssignment]
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix4_f32.c:1007:7: note: n1 is assigned
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix4_f32.c:1116:7: note: n1 is overwritten
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:882:6: style: Variable 'n1' is reassigned a value before the old one has been used. [redundantAssignment]
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:586:6: note: n1 is assigned
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:882:6: note: n1 is overwritten
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:1730:6: style: Variable 'n1' is reassigned a value before the old one has been used. [redundantAssignment]
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:1449:6: note: n1 is assigned
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:1730:6: note: n1 is overwritten
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_rfft_fast_f32.c:422:8: style: Redundant initialization for 'pB'. The initialized value is overwritten before it is read. [redundantInitialization]
+   pB  =  p + 2*k ;
+       ^
+Source/TransformFunctions/arm_rfft_fast_f32.c:408:23: note: pB is initialized
+        float32_t *pB = p;                          /* decreasing pointer */
+                      ^
+Source/TransformFunctions/arm_rfft_fast_f32.c:422:8: note: pB is overwritten
+   pB  =  p + 2*k ;
+       ^
+Source/TransformFunctions/arm_rfft_fast_f64.c:141:8: style: Redundant initialization for 'pB'. The initialized value is overwritten before it is read. [redundantInitialization]
+   pB  =  p + 2*k ;
+       ^
+Source/TransformFunctions/arm_rfft_fast_f64.c:127:23: note: pB is initialized
+        float64_t *pB = p;                          /* decreasing pointer */
+                      ^
+Source/TransformFunctions/arm_rfft_fast_f64.c:141:8: note: pB is overwritten
+   pB  =  p + 2*k ;
+       ^
+Source/TransformFunctions/arm_bitreversal2.c:46:12: style: The scope of the variable 'a' can be reduced. [variableScope]
+  uint64_t a, b, tmp;
+           ^
+Source/TransformFunctions/arm_bitreversal2.c:46:15: style: The scope of the variable 'b' can be reduced. [variableScope]
+  uint64_t a, b, tmp;
+              ^
+Source/TransformFunctions/arm_bitreversal2.c:46:18: style: The scope of the variable 'tmp' can be reduced. [variableScope]
+  uint64_t a, b, tmp;
+                 ^
+Source/TransformFunctions/arm_bitreversal2.c:81:12: style: The scope of the variable 'a' can be reduced. [variableScope]
+  uint32_t a, b, i, tmp;
+           ^
+Source/TransformFunctions/arm_bitreversal2.c:81:15: style: The scope of the variable 'b' can be reduced. [variableScope]
+  uint32_t a, b, i, tmp;
+              ^
+Source/TransformFunctions/arm_bitreversal2.c:81:21: style: The scope of the variable 'tmp' can be reduced. [variableScope]
+  uint32_t a, b, i, tmp;
+                    ^
+Source/TransformFunctions/arm_bitreversal2.c:116:12: style: The scope of the variable 'a' can be reduced. [variableScope]
+  uint16_t a, b, tmp;
+           ^
+Source/TransformFunctions/arm_bitreversal2.c:116:15: style: The scope of the variable 'b' can be reduced. [variableScope]
+  uint16_t a, b, tmp;
+              ^
+Source/TransformFunctions/arm_bitreversal2.c:116:18: style: The scope of the variable 'tmp' can be reduced. [variableScope]
+  uint16_t a, b, tmp;
+                 ^
+Source/TransformFunctions/arm_cfft_f64.c:65:13: style: The scope of the variable 'ia1' can be reduced. [variableScope]
+   uint32_t ia1, ia2, ia3;
+            ^
+Source/TransformFunctions/arm_cfft_f64.c:67:21: style: The scope of the variable 'j' can be reduced. [variableScope]
+   uint32_t n1, n2, j, k;
+                    ^
+Source/TransformFunctions/arm_cfft_f64.c:196:17: style: The scope of the variable 'l' can be reduced. [variableScope]
+    uint32_t i, l;
+                ^
+Source/TransformFunctions/arm_cfft_q31.c:726:21: style: The scope of the variable 'l' can be reduced. [variableScope]
+        uint32_t i, l;
+                    ^
+Source/TransformFunctions/arm_cfft_q31.c:787:15: style: The scope of the variable 'l' can be reduced. [variableScope]
+  uint32_t i, l;
+              ^
+Source/TransformFunctions/arm_cfft_radix8_f32.c:51:13: style: The scope of the variable 'ia1' can be reduced. [variableScope]
+   uint32_t ia1, ia2, ia3, ia4, ia5, ia6, ia7;
+            ^
+Source/TransformFunctions/arm_cfft_radix8_f32.c:52:13: style: The scope of the variable 'i1' can be reduced. [variableScope]
+   uint32_t i1, i2, i3, i4, i5, i6, i7, i8;
+            ^
+Source/TransformFunctions/arm_cfft_radix8_f32.c:54:13: style: The scope of the variable 'n1' can be reduced. [variableScope]
+   uint32_t n1, n2, j;
+            ^
+Source/TransformFunctions/arm_cfft_radix8_f32.c:54:21: style: The scope of the variable 'j' can be reduced. [variableScope]
+   uint32_t n1, n2, j;
+                    ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:157:17: style:inconclusive: Function 'arm_radix4_butterfly_q15' argument 1 names different: declaration 'pSrc' definition 'pSrc16'. [funcArgNamesDifferent]
+        q15_t * pSrc16,
+                ^
+Source/TransformFunctions/arm_cfft_q15.c:587:17: note: Function 'arm_radix4_butterfly_q15' argument 1 names different: declaration 'pSrc' definition 'pSrc16'.
+        q15_t * pSrc,
+                ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:157:17: note: Function 'arm_radix4_butterfly_q15' argument 1 names different: declaration 'pSrc' definition 'pSrc16'.
+        q15_t * pSrc16,
+                ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:159:17: style:inconclusive: Function 'arm_radix4_butterfly_q15' argument 3 names different: declaration 'pCoef' definition 'pCoef16'. [funcArgNamesDifferent]
+  const q15_t * pCoef16,
+                ^
+Source/TransformFunctions/arm_cfft_q15.c:589:17: note: Function 'arm_radix4_butterfly_q15' argument 3 names different: declaration 'pCoef' definition 'pCoef16'.
+  const q15_t * pCoef,
+                ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:159:17: note: Function 'arm_radix4_butterfly_q15' argument 3 names different: declaration 'pCoef' definition 'pCoef16'.
+  const q15_t * pCoef16,
+                ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:1027:17: style:inconclusive: Function 'arm_radix4_butterfly_inverse_q15' argument 1 names different: declaration 'pSrc' definition 'pSrc16'. [funcArgNamesDifferent]
+        q15_t * pSrc16,
+                ^
+Source/TransformFunctions/arm_cfft_q15.c:593:17: note: Function 'arm_radix4_butterfly_inverse_q15' argument 1 names different: declaration 'pSrc' definition 'pSrc16'.
+        q15_t * pSrc,
+                ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:1027:17: note: Function 'arm_radix4_butterfly_inverse_q15' argument 1 names different: declaration 'pSrc' definition 'pSrc16'.
+        q15_t * pSrc16,
+                ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:1029:17: style:inconclusive: Function 'arm_radix4_butterfly_inverse_q15' argument 3 names different: declaration 'pCoef' definition 'pCoef16'. [funcArgNamesDifferent]
+  const q15_t * pCoef16,
+                ^
+Source/TransformFunctions/arm_cfft_q15.c:595:17: note: Function 'arm_radix4_butterfly_inverse_q15' argument 3 names different: declaration 'pCoef' definition 'pCoef16'.
+  const q15_t * pCoef,
+                ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:1029:17: note: Function 'arm_radix4_butterfly_inverse_q15' argument 3 names different: declaration 'pCoef' definition 'pCoef16'.
+  const q15_t * pCoef16,
+                ^
+Source/TransformFunctions/arm_cfft_f64.c:74:7: style: Variable 'n1' is assigned a value that is never used. [unreadVariable]
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:364:12: style: Variable 'cosVal' is assigned a value that is never used. [unreadVariable]
+    cosVal = pCoef[ia * 2];
+           ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:365:12: style: Variable 'sinVal' is assigned a value that is never used. [unreadVariable]
+    sinVal = pCoef[(ia * 2) + 1];
+           ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:387:20: style: Variable 'twidCoefModifier' is assigned a value that is never used. [unreadVariable]
+  twidCoefModifier = twidCoefModifier << 1U;
+                   ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:662:10: style: Variable 'cosVal' is assigned a value that is never used. [unreadVariable]
+  cosVal = pCoef[(ia * 2)];
+         ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:663:10: style: Variable 'sinVal' is assigned a value that is never used. [unreadVariable]
+  sinVal = pCoef[(ia * 2) + 1];
+         ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:665:6: style: Variable 'ia' is assigned a value that is never used. [unreadVariable]
+  ia = ia + twidCoefModifier;
+     ^
+Source/TransformFunctions/arm_cfft_radix2_q31.c:180:7: style: Variable 'ia' is assigned a value that is never used. [unreadVariable]
+   ia = ia + twidCoefModifier;
+      ^
+Source/TransformFunctions/arm_cfft_radix2_q31.c:303:7: style: Variable 'ia' is assigned a value that is never used. [unreadVariable]
+   ia = ia + twidCoefModifier;
+      ^
+Source/TransformFunctions/arm_cfft_radix4_f32.c:485:7: style: Variable 'n1' is assigned a value that is never used. [unreadVariable]
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix4_q31.c:180:6: style: Variable 'n1' is assigned a value that is never used. [unreadVariable]
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_cfft_radix4_q31.c:550:6: style: Variable 'n1' is assigned a value that is never used. [unreadVariable]
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_rfft_fast_f32.c:334:8: style: Variable 'twR' is assigned a value that is never used. [unreadVariable]
+   twR = *pCoeff++ ;
+       ^
+Source/TransformFunctions/arm_rfft_fast_f32.c:335:8: style: Variable 'twI' is assigned a value that is never used. [unreadVariable]
+   twI = *pCoeff++ ;
+       ^
+Source/TransformFunctions/arm_rfft_fast_f64.c:55:8: style: Variable 'twR' is assigned a value that is never used. [unreadVariable]
+   twR = *pCoeff++ ;
+       ^
+Source/TransformFunctions/arm_rfft_fast_f64.c:56:8: style: Variable 'twI' is assigned a value that is never used. [unreadVariable]
+   twI = *pCoeff++ ;
+       ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:576:3: style: Assignment of function parameter has no effect outside the function. [uselessAssignmentArg]
+  twidCoefModifier = twidCoefModifier << 1U;
+  ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:237:6: style: Variable 'n1' is reassigned a value before the old one has been used. [redundantAssignment]
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:101:6: note: n1 is assigned
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:237:6: note: n1 is overwritten
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:546:6: style: Variable 'n1' is reassigned a value before the old one has been used. [redundantAssignment]
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:411:6: note: n1 is assigned
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:546:6: note: n1 is overwritten
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_rfft_q15.c:262:12: style: Variable 'i' is reassigned a value before the old one has been used. [redundantAssignment]
+    for (i = fftLen - 1; i > 0; i--)
+           ^
+Source/TransformFunctions/arm_rfft_q15.c:258:7: note: i is assigned
+    i = 1U;
+      ^
+Source/TransformFunctions/arm_rfft_q15.c:262:12: note: i is overwritten
+    for (i = fftLen - 1; i > 0; i--)
+           ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:243:6: style: Variable 'ia' is assigned a value that is never used. [unreadVariable]
+  ia = ia + twidCoefModifier;
+     ^
+Source/TransformFunctions/arm_cfft_radix2_q15.c:576:20: style: Variable 'twidCoefModifier' is assigned a value that is never used. [unreadVariable]
+  twidCoefModifier = twidCoefModifier << 1U;
+                   ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:183:6: style: Variable 'n1' is assigned a value that is never used. [unreadVariable]
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_cfft_radix4_q15.c:1053:6: style: Variable 'n1' is assigned a value that is never used. [unreadVariable]
+  n1 = n2;
+     ^
+Source/TransformFunctions/arm_cfft_radix4_f32.c:131:7: style: Variable 'n1' is assigned a value that is never used. [unreadVariable]
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix4_f32.c:632:7: style: Variable 'n1' is assigned a value that is never used. [unreadVariable]
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix4_f16.c:1185:7: style: Variable 'n1' is reassigned a value before the old one has been used. [redundantAssignment]
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix4_f16.c:1076:7: note: n1 is assigned
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix4_f16.c:1185:7: note: n1 is overwritten
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_rfft_fast_f16.c:428:8: style: Redundant initialization for 'pB'. The initialized value is overwritten before it is read. [redundantInitialization]
+   pB  =  p + 2*k ;
+       ^
+Source/TransformFunctions/arm_rfft_fast_f16.c:414:23: note: pB is initialized
+        float16_t *pB = p;                          /* decreasing pointer */
+                      ^
+Source/TransformFunctions/arm_rfft_fast_f16.c:428:8: note: pB is overwritten
+   pB  =  p + 2*k ;
+       ^
+Source/TransformFunctions/arm_cfft_radix4_f16.c:78:17: style: The scope of the variable 'l' can be reduced. [variableScope]
+    uint32_t i, l;
+                ^
+Source/TransformFunctions/arm_cfft_radix8_f16.c:53:13: style: The scope of the variable 'ia1' can be reduced. [variableScope]
+   uint32_t ia1, ia2, ia3, ia4, ia5, ia6, ia7;
+            ^
+Source/TransformFunctions/arm_cfft_radix8_f16.c:54:13: style: The scope of the variable 'i1' can be reduced. [variableScope]
+   uint32_t i1, i2, i3, i4, i5, i6, i7, i8;
+            ^
+Source/TransformFunctions/arm_cfft_radix8_f16.c:56:13: style: The scope of the variable 'n1' can be reduced. [variableScope]
+   uint32_t n1, n2, j;
+            ^
+Source/TransformFunctions/arm_cfft_radix8_f16.c:56:21: style: The scope of the variable 'j' can be reduced. [variableScope]
+   uint32_t n1, n2, j;
+                    ^
+Source/TransformFunctions/arm_cfft_radix4_f16.c:552:7: style: Variable 'n1' is assigned a value that is never used. [unreadVariable]
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_rfft_fast_f16.c:340:8: style: Variable 'twR' is assigned a value that is never used. [unreadVariable]
+   twR = *pCoeff++ ;
+       ^
+Source/TransformFunctions/arm_rfft_fast_f16.c:341:8: style: Variable 'twI' is assigned a value that is never used. [unreadVariable]
+   twI = *pCoeff++ ;
+       ^
+Source/TransformFunctions/arm_cfft_radix4_f16.c:196:7: style: Variable 'n1' is assigned a value that is never used. [unreadVariable]
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_cfft_radix4_f16.c:699:7: style: Variable 'n1' is assigned a value that is never used. [unreadVariable]
+   n1 = n2;
+      ^
+Source/TransformFunctions/arm_rfft_fast_f16.c:229:8: style: Redundant initialization for 'pB'. The initialized value is overwritten before it is read. [redundantInitialization]
+   pB  =  p + 2*k - 14;
+       ^
+Source/TransformFunctions/arm_rfft_fast_f16.c:206:23: note: pB is initialized
+        float16_t *pB = p;                          /* decreasing pointer */
+                      ^
+Source/TransformFunctions/arm_rfft_fast_f16.c:229:8: note: pB is overwritten
+   pB  =  p + 2*k - 14;
+       ^
+Source/TransformFunctions/arm_rfft_fast_f16.c:71:8: style: Variable 'twR' is assigned a value that is never used. [unreadVariable]
+   twR = *pCoeff++ ;
+       ^
+Source/TransformFunctions/arm_rfft_fast_f16.c:72:8: style: Variable 'twI' is assigned a value that is never used. [unreadVariable]
+   twI = *pCoeff++ ;
+       ^
+Testing/FrameworkSource/Error.cpp:95:10: portability: %lld in format string (no. 1) requires 'long long' but the argument type is 'int {aka signed int}'. [invalidPrintfArgType_sint]
+         sprintf(details,"diff %lld > %lld (0x%016llX,0x%016llX)",abs(pa - pb) , threshold,pa,pb);
+         ^
+Testing/FrameworkSource/Error.cpp:349:9: portability: %g in format string (no. 1) requires 'double' but the argument type is 'int {aka signed int}'. [invalidPrintfArgType_float]
+        sprintf(details,"close error %g > %g: (val = %g, ref = %g)",abs(val - ref) , absthreshold + relthreshold * abs(ref),val,ref);
+        ^
+Testing/FrameworkSource/Error.cpp:392:9: portability: %g in format string (no. 1) requires 'double' but the argument type is 'int {aka signed int}'. [invalidPrintfArgType_float]
+        sprintf(details,"close error %g > %g: (val = %g, ref = %g)",abs(val - ref) , absthreshold + relthreshold * abs(ref),val,ref);
+        ^
+Testing/FrameworkSource/Error.cpp:208:12: style: The scope of the variable 'rel' can be reduced. [variableScope]
+    double rel,delta,average;
+           ^
+Testing/FrameworkSource/Error.cpp:578:10: style: The scope of the variable 'testVal' can be reduced. [variableScope]
+  double testVal,refVal;
+         ^
+Testing/FrameworkSource/Error.cpp:578:18: style: The scope of the variable 'refVal' can be reduced. [variableScope]
+  double testVal,refVal;
+                 ^
+Testing/FrameworkSource/Error.cpp:186:56: style: Parameter 'a' can be declared with const [constParameter]
+void assert_relative_error(unsigned long nb,float64_t &a, float64_t &b, double threshold)
+                                                       ^
+Testing/FrameworkSource/Error.cpp:186:70: style: Parameter 'b' can be declared with const [constParameter]
+void assert_relative_error(unsigned long nb,float64_t &a, float64_t &b, double threshold)
+                                                                     ^
+Testing/FrameworkSource/Error.cpp:343:53: style: Parameter 'ref' can be declared with const [constParameter]
+void assert_close_error(unsigned long nb,float64_t &ref, float64_t &val, double absthreshold,double relthreshold)
+                                                    ^
+Testing/FrameworkSource/Error.cpp:343:69: style: Parameter 'val' can be declared with const [constParameter]
+void assert_close_error(unsigned long nb,float64_t &ref, float64_t &val, double absthreshold,double relthreshold)
+                                                                    ^
+Testing/FrameworkSource/Error.cpp:386:53: style: Parameter 'ref' can be declared with const [constParameter]
+void assert_close_error(unsigned long nb,float32_t &ref, float32_t &val, double absthreshold,double relthreshold)
+                                                    ^
+Testing/FrameworkSource/Error.cpp:386:69: style: Parameter 'val' can be declared with const [constParameter]
+void assert_close_error(unsigned long nb,float32_t &ref, float32_t &val, double absthreshold,double relthreshold)
+                                                                    ^
+Testing/FrameworkSource/Error.cpp:93:10: portability: %ld in format string (no. 1) requires 'long' but the argument type is 'int {aka signed int}'. [invalidPrintfArgType_sint]
+         sprintf(details,"diff %ld > %ld (0x%016lX,0x%016lX)",abs(pa - pb) , threshold,pa,pb);
+         ^
+Testing/FrameworkSource/FPGA.cpp:743:15: warning: %llx in format string (no. 1) requires 'unsigned long long' but the argument type is 'unsigned long'. [invalidPrintfArgType_uint]
+              printf("D: 0x%016llx\n",t);
+              ^
+Testing/FrameworkSource/FPGA.cpp:806:15: warning: %llx in format string (no. 1) requires 'unsigned long long' but the argument type is 'unsigned long'. [invalidPrintfArgType_uint]
+              printf("D: 0x%016llx\n",t);
+              ^
+Testing/FrameworkSource/FPGA.cpp:886:15: warning: %llx in format string (no. 1) requires 'unsigned long long' but the argument type is 'unsigned long'. [invalidPrintfArgType_uint]
+              printf("D: 0x%016llx\n",t);
+              ^
+Testing/FrameworkSource/FPGA.cpp:173:14: style: The scope of the variable 'tmp' can be reduced. [variableScope]
+        char tmp[255];
+             ^
+Testing/FrameworkSource/FPGA.cpp:444:23: style: The scope of the variable 'offset' can be reduced. [variableScope]
+        unsigned long offset;
+                      ^
+Testing/FrameworkSource/FPGA.cpp:507:30: style: The scope of the variable 'i' can be reduced. [variableScope]
+        unsigned long offset,i;
+                             ^
+Testing/FrameworkSource/FPGA.cpp:526:30: style: The scope of the variable 'i' can be reduced. [variableScope]
+        unsigned long offset,i;
+                             ^
+Testing/FrameworkSource/FPGA.cpp:568:30: style: The scope of the variable 'i' can be reduced. [variableScope]
+        unsigned long offset,i;
+                             ^
+Testing/FrameworkSource/FPGA.cpp:587:30: style: The scope of the variable 'i' can be reduced. [variableScope]
+        unsigned long offset,i;
+                             ^
+Testing/FrameworkSource/FPGA.cpp:606:30: style: The scope of the variable 'i' can be reduced. [variableScope]
+        unsigned long offset,i;
+                             ^
+Testing/FrameworkSource/FPGA.cpp:625:30: style: The scope of the variable 'i' can be reduced. [variableScope]
+        unsigned long offset,i;
+                             ^
+Testing/FrameworkSource/FPGA.cpp:644:30: style: The scope of the variable 'i' can be reduced. [variableScope]
+        unsigned long offset,i;
+                             ^
+Testing/FrameworkSource/FPGA.cpp:664:30: style: The scope of the variable 'i' can be reduced. [variableScope]
+        unsigned long offset,i;
+                             ^
+Testing/FrameworkSource/FPGA.cpp:683:30: style: The scope of the variable 'i' can be reduced. [variableScope]
+        unsigned long offset,i;
+                             ^
+Testing/FrameworkSource/FPGA.cpp:702:30: style: The scope of the variable 'i' can be reduced. [variableScope]
+        unsigned long offset,i;
+                             ^
+Testing/FrameworkSource/FPGA.cpp:757:22: style: The scope of the variable 't' can be reduced. [variableScope]
+            uint32_t t;
+                     ^
+Testing/FrameworkSource/FPGA.cpp:820:21: style: The scope of the variable 't' can be reduced. [variableScope]
+           uint32_t t;
+                    ^
+Testing/FrameworkSource/FPGA.cpp:839:21: style: The scope of the variable 't' can be reduced. [variableScope]
+           uint32_t t;
+                    ^
+Testing/FrameworkSource/FPGA.cpp:858:22: style: The scope of the variable 't' can be reduced. [variableScope]
+            uint32_t t;
+                     ^
+Testing/FrameworkSource/FPGA.cpp:901:21: style: The scope of the variable 't' can be reduced. [variableScope]
+           uint32_t t;
+                    ^
+Testing/FrameworkSource/FPGA.cpp:902:21: style: The scope of the variable 'v' can be reduced. [variableScope]
+           uint32_t v;
+                    ^
+Testing/FrameworkSource/FPGA.cpp:920:22: style: The scope of the variable 't' can be reduced. [variableScope]
+            uint32_t t;
+                     ^
+Testing/FrameworkSource/FPGA.cpp:921:22: style: The scope of the variable 'v' can be reduced. [variableScope]
+            uint16_t v;
+                     ^
+Testing/FrameworkSource/FPGA.cpp:939:22: style: The scope of the variable 't' can be reduced. [variableScope]
+            uint32_t t;
+                     ^
+Testing/FrameworkSource/FPGA.cpp:940:21: style: The scope of the variable 'v' can be reduced. [variableScope]
+            uint8_t v;
+                    ^
+Testing/FrameworkSource/FPGA.cpp:365:33: style: Local variable 'i' shadows outer variable [shadowVariable]
+              for(unsigned long i=0;i < nbInputSamples; i ++)
+                                ^
+Testing/FrameworkSource/FPGA.cpp:336:27: note: Shadowed declaration
+        for(unsigned long i=0;i<nbValues;i++)
+                          ^
+Testing/FrameworkSource/FPGA.cpp:365:33: note: Shadow variable
+              for(unsigned long i=0;i < nbInputSamples; i ++)
+                                ^
+Testing/FrameworkSource/FPGA.cpp:303:21: style: Unused variable: tmpstr [unusedVariable]
+        std::string tmpstr;
+                    ^
+Testing/FrameworkSource/FPGA.cpp:334:21: style: Unused variable: tmpstr [unusedVariable]
+        std::string tmpstr;
+                    ^
+Testing/FrameworkSource/Generators.cpp:36:8: style: Variable 'pa' is reassigned a value before the old one has been used. [redundantAssignment]
+    pa = paStart;
+       ^
+Testing/FrameworkSource/Generators.cpp:30:8: note: pa is assigned
+    pa = paStart;
+       ^
+Testing/FrameworkSource/Generators.cpp:36:8: note: pa is overwritten
+    pa = paStart;
+       ^
+Testing/FrameworkSource/Generators.cpp:81:8: style: Variable 'pa' is reassigned a value before the old one has been used. [redundantAssignment]
+    pa = paStart;
+       ^
+Testing/FrameworkSource/Generators.cpp:70:8: note: pa is assigned
+    pa = paStart;
+       ^
+Testing/FrameworkSource/Generators.cpp:81:8: note: pa is overwritten
+    pa = paStart;
+       ^
+Testing/FrameworkSource/Generators.cpp:142:8: style: Variable 'pa' is reassigned a value before the old one has been used. [redundantAssignment]
+    pa = paStart;
+       ^
+Testing/FrameworkSource/Generators.cpp:128:8: note: pa is assigned
+    pa = paStart;
+       ^
+Testing/FrameworkSource/Generators.cpp:142:8: note: pa is overwritten
+    pa = paStart;
+       ^
+Testing/FrameworkSource/Generators.cpp:34:8: style: Variable 'pb' is assigned a value that is never used. [unreadVariable]
+    pb = pbStart;
+       ^
+Testing/FrameworkSource/Generators.cpp:74:8: style: Variable 'pb' is assigned a value that is never used. [unreadVariable]
+    pb = pbStart;
+       ^
+Testing/FrameworkSource/Generators.cpp:78:8: style: Variable 'pc' is assigned a value that is never used. [unreadVariable]
+    pc = pcStart;
+       ^
+Testing/FrameworkSource/Generators.cpp:132:8: style: Variable 'pb' is assigned a value that is never used. [unreadVariable]
+    pb = pbStart;
+       ^
+Testing/FrameworkSource/Generators.cpp:136:8: style: Variable 'pc' is assigned a value that is never used. [unreadVariable]
+    pc = pcStart;
+       ^
+Testing/FrameworkSource/Generators.cpp:140:8: style: Variable 'pd' is assigned a value that is never used. [unreadVariable]
+    pd = pdStart;
+       ^
+Testing/FrameworkSource/IORunner.cpp:202:33: style: Variable 'error' is assigned a value that is never used. [unreadVariable]
+        Testing::errorID_t error=0;
+                                ^
+Testing/FrameworkSource/IORunner.cpp:203:28: style: Variable 'line' is assigned a value that is never used. [unreadVariable]
+        unsigned long line = 0;
+                           ^
+Testing/FrameworkSource/Semihosting.cpp:309:19: error: Buffer is accessed out of bounds: tmp [bufferAccessOutOfBounds]
+            fgets(tmp,256,this->infile);
+                  ^
+Testing/FrameworkSource/Semihosting.cpp:256:10: warning: %ld in format string (no. 1) requires 'long *' but the argument type is 'unsigned long *'. [invalidScanfArgType_int]
+         fscanf(this->infile,"%ld\n",&nb);
+         ^
+Testing/FrameworkSource/Semihosting.cpp:540:16: warning: %d in format string (no. 1) requires 'int *' but the argument type is 'unsigned int *'. [invalidScanfArgType_int]
+               fscanf(params,"%d\n",&val);
+               ^
+Testing/FrameworkSource/Semihosting.cpp:622:17: warning: %llx in format string (no. 1) requires 'unsigned long long *' but the argument type is 'unsigned long *'. [invalidScanfArgType_int]
+                fscanf(pattern,"0x%16llx\n",&val);
+                ^
+Testing/FrameworkSource/Semihosting.cpp:744:17: warning: %llX in format string (no. 1) requires 'unsigned long long *' but the argument type is 'unsigned long *'. [invalidScanfArgType_int]
+                fscanf(pattern,"0x%016llX\n",&val);
+                ^
+Testing/FrameworkSource/Semihosting.cpp:896:18: warning: %llX in format string (no. 1) requires 'unsigned long long *' but the argument type is 'unsigned long *'. [invalidScanfArgType_int]
+                 fscanf(pattern,"0x%016llX\n",&val);
+                 ^
+Testing/FrameworkSource/Semihosting.cpp:1033:20: warning: %llx in format string (no. 1) requires 'unsigned long long' but the argument type is 'unsigned long'. [invalidPrintfArgType_uint]
+                   fprintf(f,"0x%016llx\n",t);
+                   ^
+Testing/FrameworkSource/Semihosting.cpp:1090:20: warning: %llx in format string (no. 1) requires 'unsigned long long' but the argument type is 'unsigned long'. [invalidPrintfArgType_uint]
+                   fprintf(f,"0x%016llx\n",t);
+                   ^
+Testing/FrameworkSource/Semihosting.cpp:1156:20: warning: %llx in format string (no. 1) requires 'unsigned long long' but the argument type is 'unsigned long'. [invalidPrintfArgType_uint]
+                   fprintf(f,"0x%016llx\n",t);
+                   ^
+Testing/FrameworkSource/Semihosting.cpp:287:14: style: The scope of the variable 'tmp' can be reduced. [variableScope]
+        char tmp[255];
+             ^
+Testing/FrameworkSource/Semihosting.cpp:511:16: style: The scope of the variable 'tmp' can be reduced. [variableScope]
+          char tmp[256];
+               ^
+Testing/FrameworkSource/Semihosting.cpp:513:29: style: The scope of the variable 'p' can be reduced. [variableScope]
+          Testing::param_t *p;
+                            ^
+Testing/FrameworkSource/Semihosting.cpp:1027:26: style: The scope of the variable 't' can be reduced. [variableScope]
+                uint64_t t;
+                         ^
+Testing/FrameworkSource/Semihosting.cpp:1046:25: style: The scope of the variable 't' can be reduced. [variableScope]
+               uint32_t t;
+                        ^
+Testing/FrameworkSource/Semihosting.cpp:1086:26: style: The scope of the variable 't' can be reduced. [variableScope]
+                uint64_t t;
+                         ^
+Testing/FrameworkSource/Semihosting.cpp:1103:26: style: The scope of the variable 't' can be reduced. [variableScope]
+                uint32_t t;
+                         ^
+Testing/FrameworkSource/Semihosting.cpp:1119:26: style: The scope of the variable 't' can be reduced. [variableScope]
+                uint32_t t;
+                         ^
+Testing/FrameworkSource/Semihosting.cpp:1135:26: style: The scope of the variable 't' can be reduced. [variableScope]
+                uint32_t t;
+                         ^
+Testing/FrameworkSource/Semihosting.cpp:1152:26: style: The scope of the variable 't' can be reduced. [variableScope]
+                uint64_t t;
+                         ^
+Testing/FrameworkSource/Semihosting.cpp:1169:26: style: The scope of the variable 't' can be reduced. [variableScope]
+                uint32_t t;
+                         ^
+Testing/FrameworkSource/Semihosting.cpp:1185:26: style: The scope of the variable 't' can be reduced. [variableScope]
+                uint32_t t;
+                         ^
+Testing/FrameworkSource/Semihosting.cpp:1201:25: style: The scope of the variable 't' can be reduced. [variableScope]
+               uint32_t t;
+                        ^
+Testing/FrameworkSource/Semihosting.cpp:159:27: style: Local variable 'tmp' shadows outer variable [shadowVariable]
+              std::string tmp;
+                          ^
+Testing/FrameworkSource/Semihosting.cpp:131:14: note: Shadowed declaration
+        char tmp[256];
+             ^
+Testing/FrameworkSource/Semihosting.cpp:159:27: note: Shadow variable
+              std::string tmp;
+                          ^
+Testing/FrameworkSource/Semihosting.cpp:197:23: style: Local variable 'i' shadows outer variable [shadowVariable]
+              for(int i=0;i < nbInputSamples; i ++)
+                      ^
+Testing/FrameworkSource/Semihosting.cpp:144:17: note: Shadowed declaration
+        for(int i=0;i<nbValues;i++)
+                ^
+Testing/FrameworkSource/Semihosting.cpp:197:23: note: Shadow variable
+              for(int i=0;i < nbInputSamples; i ++)
+                      ^
+Testing/FrameworkSource/Semihosting.cpp:597:33: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+          Testing::nbSamples_t i=0;
+                                ^
+Testing/FrameworkSource/Semihosting.cpp:636:33: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+          Testing::nbSamples_t i=0;
+                                ^
+Testing/FrameworkSource/Semihosting.cpp:720:33: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+          Testing::nbSamples_t i=0;
+                                ^
+Testing/FrameworkSource/Semihosting.cpp:758:33: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+          Testing::nbSamples_t i=0;
+                                ^
+Testing/FrameworkSource/Semihosting.cpp:796:33: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+          Testing::nbSamples_t i=0;
+                                ^
+Testing/FrameworkSource/Semihosting.cpp:834:33: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+          Testing::nbSamples_t i=0;
+                                ^
+Testing/FrameworkSource/Semihosting.cpp:872:33: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+          Testing::nbSamples_t i=0;
+                                ^
+Testing/FrameworkSource/Semihosting.cpp:910:33: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+          Testing::nbSamples_t i=0;
+                                ^
+Testing/FrameworkSource/Semihosting.cpp:948:33: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+          Testing::nbSamples_t i=0;
+                                ^
+Testing/FrameworkSource/Semihosting.cpp:986:33: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+          Testing::nbSamples_t i=0;
+                                ^
+Testing/FrameworkSource/Timing.cpp:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 35 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+Testing/Source/Tests/BIQUADF16.cpp:242:13: style: The scope of the variable 'blockSize' can be reduced. [variableScope]
+        int blockSize;
+            ^
+Testing/Source/Tests/BIQUADF16.cpp:243:13: style: The scope of the variable 'numStages' can be reduced. [variableScope]
+        int numStages;
+            ^
+Testing/Source/Tests/BIQUADF16.cpp:314:13: style: The scope of the variable 'blockSize' can be reduced. [variableScope]
+        int blockSize;
+            ^
+Testing/Source/Tests/BIQUADF16.cpp:315:13: style: The scope of the variable 'numStages' can be reduced. [variableScope]
+        int numStages;
+            ^
+Testing/Source/Tests/BIQUADF32.cpp:340:13: style: The scope of the variable 'blockSize' can be reduced. [variableScope]
+        int blockSize;
+            ^
+Testing/Source/Tests/BIQUADF32.cpp:341:13: style: The scope of the variable 'numStages' can be reduced. [variableScope]
+        int numStages;
+            ^
+Testing/Source/Tests/BIQUADF64.cpp:92:13: style: The scope of the variable 'blockSize' can be reduced. [variableScope]
+        int blockSize;
+            ^
+Testing/Source/Tests/BIQUADF64.cpp:93:13: style: The scope of the variable 'numStages' can be reduced. [variableScope]
+        int numStages;
+            ^
+Testing/Source/Tests/BinaryTestsF16.cpp:57:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsF16.cpp:57:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsF16.cpp:57:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsF16.cpp:85:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsF16.cpp:85:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsF16.cpp:85:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsF32.cpp:63:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsF32.cpp:63:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsF32.cpp:63:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsF32.cpp:94:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsF32.cpp:94:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsF32.cpp:94:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsF64.cpp:56:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsF64.cpp:56:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsF64.cpp:56:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ15.cpp:87:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ15.cpp:87:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ15.cpp:87:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ15.cpp:121:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ15.cpp:121:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ15.cpp:121:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ31.cpp:64:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ31.cpp:64:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ31.cpp:64:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ31.cpp:93:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ31.cpp:93:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ31.cpp:93:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ31.cpp:119:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ31.cpp:119:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ31.cpp:119:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ7.cpp:78:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ7.cpp:78:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/BinaryTestsQ7.cpp:78:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/FIRF16.cpp:39:33: style: Variable 'inputp' is assigned a value that is never used. [unreadVariable]
+        const float16_t *inputp = inputs.ptr();
+                                ^
+Testing/Source/Tests/FIRF32.cpp:39:33: style: Variable 'inputp' is assigned a value that is never used. [unreadVariable]
+        const float32_t *inputp = inputs.ptr();
+                                ^
+Testing/Source/Tests/FIRF64.cpp:33:26: style: The scope of the variable 'coefsp' can be reduced. [variableScope]
+        const float64_t *coefsp;
+                         ^
+Testing/Source/Tests/FIRF64.cpp:40:13: style: The scope of the variable 'blockSize' can be reduced. [variableScope]
+        int blockSize;
+            ^
+Testing/Source/Tests/FIRF64.cpp:41:13: style: The scope of the variable 'numTaps' can be reduced. [variableScope]
+        int numTaps;
+            ^
+Testing/Source/Tests/FIRF64.cpp:34:33: style: Variable 'inputp' is assigned a value that is never used. [unreadVariable]
+        const float64_t *inputp = inputs.ptr();
+                                ^
+Testing/Source/Tests/FIRQ15.cpp:33:29: style: Variable 'inputp' is assigned a value that is never used. [unreadVariable]
+        const q15_t *inputp = inputs.ptr();
+                            ^
+Testing/Source/Tests/FIRQ31.cpp:33:29: style: Variable 'inputp' is assigned a value that is never used. [unreadVariable]
+        const q31_t *inputp = inputs.ptr();
+                            ^
+Testing/Source/Tests/FIRQ7.cpp:33:28: style: Variable 'inputp' is assigned a value that is never used. [unreadVariable]
+        const q7_t *inputp = inputs.ptr();
+                           ^
+Testing/Source/Tests/FastMathF16.cpp:66:26: style: Variable 'status' is assigned a value that is never used. [unreadVariable]
+        arm_status status=ARM_MATH_SUCCESS;
+                         ^
+Testing/Source/Tests/FastMathF32.cpp:31:26: style: Variable 'status' is assigned a value that is never used. [unreadVariable]
+        arm_status status=ARM_MATH_SUCCESS;
+                         ^
+Testing/Source/Tests/FastMathQ15.cpp:45:26: style: Variable 'status' is assigned a value that is never used. [unreadVariable]
+        arm_status status=ARM_MATH_SUCCESS;
+                         ^
+Testing/Source/Tests/FastMathQ31.cpp:31:26: style: Variable 'status' is assigned a value that is never used. [unreadVariable]
+        arm_status status=ARM_MATH_SUCCESS;
+                         ^
+Testing/Source/Tests/FullyConnected.cpp:28:18: style: Variable 'refp' is assigned a value that is never used. [unreadVariable]
+       q7_t *refp=ref.ptr();
+                 ^
+Testing/Source/Tests/Softmax.cpp:75:16: style: The scope of the variable 'maxIndex' can be reduced. [variableScope]
+       int16_t maxIndex;
+               ^
+Testing/Source/Tests/Softmax.cpp:98:16: style: The scope of the variable 'maxIndex' can be reduced. [variableScope]
+       int16_t maxIndex;
+               ^
+Testing/Source/Tests/SupportBarTestsF16.cpp:12:12: style: The scope of the variable 'nbVecs' can be reduced. [variableScope]
+       int nbVecs;
+           ^
+Testing/Source/Tests/SupportBarTestsF16.cpp:13:12: style: The scope of the variable 'vecDim' can be reduced. [variableScope]
+       int vecDim;
+           ^
+Testing/Source/Tests/SupportBarTestsF32.cpp:12:12: style: The scope of the variable 'nbVecs' can be reduced. [variableScope]
+       int nbVecs;
+           ^
+Testing/Source/Tests/SupportBarTestsF32.cpp:13:12: style: The scope of the variable 'vecDim' can be reduced. [variableScope]
+       int vecDim;
+           ^
+Testing/Source/Tests/SupportTestsF32.cpp:310:6: style: Redundant initialization for 'buf'. The initialized value is overwritten before it is read. [redundantInitialization]
+ buf = (float32_t *)malloc((this->nbSamples)*sizeof(float32_t) );
+     ^
+Testing/Source/Tests/SupportTestsF32.cpp:309:17: note: buf is initialized
+ float32_t *buf = buffer.ptr();
+                ^
+Testing/Source/Tests/SupportTestsF32.cpp:310:6: note: buf is overwritten
+ buf = (float32_t *)malloc((this->nbSamples)*sizeof(float32_t) );
+     ^
+Testing/Source/Tests/SupportTestsF32.cpp:327:6: style: Redundant initialization for 'buf'. The initialized value is overwritten before it is read. [redundantInitialization]
+ buf = (float32_t *)malloc((this->nbSamples)*sizeof(float32_t) );
+     ^
+Testing/Source/Tests/SupportTestsF32.cpp:326:17: note: buf is initialized
+ float32_t *buf = buffer.ptr();
+                ^
+Testing/Source/Tests/SupportTestsF32.cpp:327:6: note: buf is overwritten
+ buf = (float32_t *)malloc((this->nbSamples)*sizeof(float32_t) );
+     ^
+Testing/Source/Tests/UnaryTestsF16.cpp:181:12: style: The scope of the variable 'vecDim' can be reduced. [variableScope]
+   int16_t vecDim;
+           ^
+Testing/Source/Tests/UnaryTestsF16.cpp:219:12: style: The scope of the variable 'rows' can be reduced. [variableScope]
+   int16_t rows, columns, rank;
+           ^
+Testing/Source/Tests/UnaryTestsF16.cpp:219:18: style: The scope of the variable 'columns' can be reduced. [variableScope]
+   int16_t rows, columns, rank;
+                 ^
+Testing/Source/Tests/UnaryTestsF16.cpp:219:27: style: The scope of the variable 'rank' can be reduced. [variableScope]
+   int16_t rows, columns, rank;
+                          ^
+Testing/Source/Tests/UnaryTestsF16.cpp:285:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADVECDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsF16.cpp:285:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADVECDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsF16.cpp:310:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsF16.cpp:310:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsF16.cpp:337:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsF16.cpp:337:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsF16.cpp:364:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsF16.cpp:364:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsF16.cpp:391:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsF16.cpp:391:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsF16.cpp:418:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsF16.cpp:418:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsF16.cpp:468:11: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      int rows,columns;
+          ^
+Testing/Source/Tests/UnaryTestsF16.cpp:468:16: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      int rows,columns;
+               ^
+Testing/Source/Tests/UnaryTestsF16.cpp:508:11: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      int rows,columns;
+          ^
+Testing/Source/Tests/UnaryTestsF16.cpp:508:16: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      int rows,columns;
+               ^
+Testing/Source/Tests/UnaryTestsF16.cpp:547:11: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      int rows,columns;
+          ^
+Testing/Source/Tests/UnaryTestsF16.cpp:547:16: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      int rows,columns;
+               ^
+Testing/Source/Tests/UnaryTestsF16.cpp:588:11: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      int rows,columns;
+          ^
+Testing/Source/Tests/UnaryTestsF16.cpp:588:16: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      int rows,columns;
+               ^
+Testing/Source/Tests/UnaryTestsF32.cpp:208:12: style: The scope of the variable 'vecDim' can be reduced. [variableScope]
+   int32_t vecDim;
+           ^
+Testing/Source/Tests/UnaryTestsF32.cpp:247:12: style: The scope of the variable 'rows' can be reduced. [variableScope]
+   int32_t rows, columns, rank;
+           ^
+Testing/Source/Tests/UnaryTestsF32.cpp:247:18: style: The scope of the variable 'columns' can be reduced. [variableScope]
+   int32_t rows, columns, rank;
+                 ^
+Testing/Source/Tests/UnaryTestsF32.cpp:247:27: style: The scope of the variable 'rank' can be reduced. [variableScope]
+   int32_t rows, columns, rank;
+                          ^
+Testing/Source/Tests/UnaryTestsF32.cpp:322:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADVECDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsF32.cpp:322:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADVECDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsF32.cpp:348:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsF32.cpp:348:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsF32.cpp:376:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsF32.cpp:376:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsF32.cpp:404:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsF32.cpp:404:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsF32.cpp:432:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsF32.cpp:432:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsF32.cpp:460:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsF32.cpp:460:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsF32.cpp:513:11: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      int rows,columns;
+          ^
+Testing/Source/Tests/UnaryTestsF32.cpp:513:16: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      int rows,columns;
+               ^
+Testing/Source/Tests/UnaryTestsF32.cpp:553:11: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      int rows,columns;
+          ^
+Testing/Source/Tests/UnaryTestsF32.cpp:553:16: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      int rows,columns;
+               ^
+Testing/Source/Tests/UnaryTestsF32.cpp:593:11: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      int rows,columns;
+          ^
+Testing/Source/Tests/UnaryTestsF32.cpp:593:16: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      int rows,columns;
+               ^
+Testing/Source/Tests/UnaryTestsF32.cpp:634:11: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      int rows,columns;
+          ^
+Testing/Source/Tests/UnaryTestsF32.cpp:634:16: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      int rows,columns;
+               ^
+Testing/Source/Tests/UnaryTestsF32.cpp:784:11: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      int rows,columns;
+          ^
+Testing/Source/Tests/UnaryTestsF32.cpp:784:16: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      int rows,columns;
+               ^
+Testing/Source/Tests/UnaryTestsF32.cpp:266:6: style: Variable 'nb' is assigned a value that is never used. [unreadVariable]
+   nb=0;
+     ^
+Testing/Source/Tests/UnaryTestsF32.cpp:276:10: style: Variable 'nb' is assigned a value that is never used. [unreadVariable]
+      nb += rows * columns;
+         ^
+Testing/Source/Tests/UnaryTestsF64.cpp:156:12: style: The scope of the variable 'vecDim' can be reduced. [variableScope]
+   int64_t vecDim;
+           ^
+Testing/Source/Tests/UnaryTestsF64.cpp:290:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsF64.cpp:290:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsF64.cpp:321:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsF64.cpp:321:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsF64.cpp:373:11: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      int rows,columns;
+          ^
+Testing/Source/Tests/UnaryTestsF64.cpp:373:16: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      int rows,columns;
+               ^
+Testing/Source/Tests/UnaryTestsF64.cpp:413:11: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      int rows,columns;
+          ^
+Testing/Source/Tests/UnaryTestsF64.cpp:413:16: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      int rows,columns;
+               ^
+Testing/Source/Tests/UnaryTestsF64.cpp:452:11: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      int rows,columns;
+          ^
+Testing/Source/Tests/UnaryTestsF64.cpp:452:16: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      int rows,columns;
+               ^
+Testing/Source/Tests/UnaryTestsF64.cpp:492:11: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      int rows,columns;
+          ^
+Testing/Source/Tests/UnaryTestsF64.cpp:492:16: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      int rows,columns;
+               ^
+Testing/Source/Tests/UnaryTestsF64.cpp:610:11: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      int rows,columns;
+          ^
+Testing/Source/Tests/UnaryTestsF64.cpp:610:16: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      int rows,columns;
+               ^
+Testing/Source/Tests/UnaryTestsF64.cpp:217:6: style: Variable 'nb' is assigned a value that is never used. [unreadVariable]
+   nb=0;
+     ^
+Testing/Source/Tests/UnaryTestsF64.cpp:227:10: style: Variable 'nb' is assigned a value that is never used. [unreadVariable]
+      nb += rows * columns;
+         ^
+Testing/Source/Tests/UnaryTestsQ15.cpp:147:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADVECDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsQ15.cpp:147:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADVECDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsQ15.cpp:172:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsQ15.cpp:172:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsQ15.cpp:199:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsQ15.cpp:199:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsQ15.cpp:226:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsQ15.cpp:226:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsQ15.cpp:253:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsQ15.cpp:253:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsQ15.cpp:279:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsQ15.cpp:279:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsQ31.cpp:129:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADVECDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsQ31.cpp:129:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADVECDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsQ31.cpp:155:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsQ31.cpp:155:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsQ31.cpp:183:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsQ31.cpp:183:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsQ31.cpp:211:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsQ31.cpp:211:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsQ31.cpp:239:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsQ31.cpp:239:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsQ31.cpp:267:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsQ31.cpp:267:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsQ7.cpp:124:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADVECDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsQ7.cpp:124:7: style: The scope of the variable 'internal' can be reduced. [variableScope]
+      LOADVECDATA2();
+      ^
+Testing/Source/Tests/UnaryTestsQ7.cpp:150:7: style: The scope of the variable 'rows' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Testing/Source/Tests/UnaryTestsQ7.cpp:150:7: style: The scope of the variable 'columns' can be reduced. [variableScope]
+      LOADDATA1();
+      ^
+Examples/ARM/arm_bayes_example/RTE/Device/ARMCM0/startup_ARMCM0.c:128:0: style: The function 'Default_Handler' is never used. [unusedFunction]
+
+^
+Examples/ARM/arm_bayes_example/RTE/Device/ARMCM0/system_ARMCM0.c:45:0: style: The function 'SystemCoreClockUpdate' is never used. [unusedFunction]
+
+^
+Testing/cmsis_build/RTE/Device/ARMCA5/startup_ARMCA5.c:58:0: style: The function 'Vectors' is never used. [unusedFunction]
+
+^
+Examples/ARM/arm_convolution_example/math_helper.c:294:0: style: The function 'arm_apply_guard_bits' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_biquad_cascade_df1_fast_q15.c:60:0: style: The function 'arm_biquad_cascade_df1_fast_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_biquad_cascade_df1_fast_q31.c:62:0: style: The function 'arm_biquad_cascade_df1_fast_q31' is never used. [unusedFunction]
+
+^
+Examples/ARM/arm_convolution_example/math_helper.c:268:0: style: The function 'arm_calc_guard_bits' is never used. [unusedFunction]
+
+^
+Examples/ARM/arm_convolution_example/math_helper.c:166:0: style: The function 'arm_compare_fixed_q15' is never used. [unusedFunction]
+
+^
+Examples/ARM/arm_convolution_example/math_helper.c:194:0: style: The function 'arm_compare_fixed_q31' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_conv_fast_opt_q15.c:65:0: style: The function 'arm_conv_fast_opt_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_conv_fast_q15.c:63:0: style: The function 'arm_conv_fast_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_conv_fast_q31.c:63:0: style: The function 'arm_conv_fast_q31' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_conv_opt_q15.c:61:0: style: The function 'arm_conv_opt_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_conv_opt_q7.c:59:0: style: The function 'arm_conv_opt_q7' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_correlate_fast_opt_q15.c:64:0: style: The function 'arm_correlate_fast_opt_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_correlate_fast_q15.c:63:0: style: The function 'arm_correlate_fast_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_correlate_fast_q31.c:65:0: style: The function 'arm_correlate_fast_q31' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_correlate_opt_q15.c:61:0: style: The function 'arm_correlate_opt_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_correlate_opt_q7.c:59:0: style: The function 'arm_correlate_opt_q7' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_decimate_fast_q15.c:308:0: style: The function 'arm_fir_decimate_fast_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_decimate_fast_q31.c:62:0: style: The function 'arm_fir_decimate_fast_q31' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_fast_q15.c:60:0: style: The function 'arm_fir_fast_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_fast_q31.c:61:0: style: The function 'arm_fir_fast_q31' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_lattice_f32.c:124:0: style: The function 'arm_fir_lattice_f32' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_lattice_init_f32.c:49:0: style: The function 'arm_fir_lattice_init_f32' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_lattice_init_q15.c:49:0: style: The function 'arm_fir_lattice_init_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_lattice_init_q31.c:49:0: style: The function 'arm_fir_lattice_init_q31' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_lattice_q15.c:49:0: style: The function 'arm_fir_lattice_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_lattice_q31.c:52:0: style: The function 'arm_fir_lattice_q31' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_sparse_f32.c:113:0: style: The function 'arm_fir_sparse_f32' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_sparse_init_f32.c:60:0: style: The function 'arm_fir_sparse_init_f32' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_sparse_init_q15.c:60:0: style: The function 'arm_fir_sparse_init_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_sparse_init_q31.c:59:0: style: The function 'arm_fir_sparse_init_q31' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_sparse_init_q7.c:60:0: style: The function 'arm_fir_sparse_init_q7' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_sparse_q15.c:59:0: style: The function 'arm_fir_sparse_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_sparse_q31.c:57:0: style: The function 'arm_fir_sparse_q31' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_fir_sparse_q7.c:59:0: style: The function 'arm_fir_sparse_q7' is never used. [unusedFunction]
+
+^
+Examples/ARM/arm_convolution_example/math_helper.c:140:0: style: The function 'arm_float_to_q12_20' is never used. [unusedFunction]
+
+^
+Examples/ARM/arm_convolution_example/math_helper.c:335:0: style: The function 'arm_float_to_q14' is never used. [unusedFunction]
+
+^
+Examples/ARM/arm_convolution_example/math_helper.c:420:0: style: The function 'arm_float_to_q28' is never used. [unusedFunction]
+
+^
+Examples/ARM/arm_convolution_example/math_helper.c:392:0: style: The function 'arm_float_to_q29' is never used. [unusedFunction]
+
+^
+Examples/ARM/arm_convolution_example/math_helper.c:365:0: style: The function 'arm_float_to_q30' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_iir_lattice_f32.c:121:0: style: The function 'arm_iir_lattice_f32' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_iir_lattice_init_f32.c:51:0: style: The function 'arm_iir_lattice_init_f32' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_iir_lattice_init_q15.c:51:0: style: The function 'arm_iir_lattice_init_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_iir_lattice_init_q31.c:51:0: style: The function 'arm_iir_lattice_init_q31' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_iir_lattice_q15.c:57:0: style: The function 'arm_iir_lattice_q15' is never used. [unusedFunction]
+
+^
+Source/FilteringFunctions/arm_iir_lattice_q31.c:56:0: style: The function 'arm_iir_lattice_q31' is never used. [unusedFunction]
+
+^
+Source/MatrixFunctions/arm_mat_init_f16.c:53:0: style: The function 'arm_mat_init_f16' is never used. [unusedFunction]
+
+^
+Source/MatrixFunctions/arm_mat_init_f64.c:58:0: style: The function 'arm_mat_init_f64' is never used. [unusedFunction]
+
+^
+Source/MatrixFunctions/arm_mat_init_q15.c:49:0: style: The function 'arm_mat_init_q15' is never used. [unusedFunction]
+
+^
+Source/MatrixFunctions/arm_mat_init_q31.c:51:0: style: The function 'arm_mat_init_q31' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f16.c:352:0: style: The function 'arm_mfcc_init_1024_f16' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f32.c:352:0: style: The function 'arm_mfcc_init_1024_f32' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q15.c:351:0: style: The function 'arm_mfcc_init_1024_q15' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q31.c:352:0: style: The function 'arm_mfcc_init_1024_q31' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f16.c:265:0: style: The function 'arm_mfcc_init_128_f16' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f32.c:265:0: style: The function 'arm_mfcc_init_128_f32' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q15.c:264:0: style: The function 'arm_mfcc_init_128_q15' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q31.c:265:0: style: The function 'arm_mfcc_init_128_q31' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f16.c:381:0: style: The function 'arm_mfcc_init_2048_f16' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f32.c:381:0: style: The function 'arm_mfcc_init_2048_f32' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q15.c:380:0: style: The function 'arm_mfcc_init_2048_q15' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q31.c:381:0: style: The function 'arm_mfcc_init_2048_q31' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f16.c:294:0: style: The function 'arm_mfcc_init_256_f16' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f32.c:294:0: style: The function 'arm_mfcc_init_256_f32' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q15.c:293:0: style: The function 'arm_mfcc_init_256_q15' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q31.c:294:0: style: The function 'arm_mfcc_init_256_q31' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f16.c:207:0: style: The function 'arm_mfcc_init_32_f16' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f32.c:207:0: style: The function 'arm_mfcc_init_32_f32' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q15.c:206:0: style: The function 'arm_mfcc_init_32_q15' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q31.c:207:0: style: The function 'arm_mfcc_init_32_q31' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f16.c:410:0: style: The function 'arm_mfcc_init_4096_f16' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f32.c:410:0: style: The function 'arm_mfcc_init_4096_f32' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q15.c:409:0: style: The function 'arm_mfcc_init_4096_q15' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q31.c:410:0: style: The function 'arm_mfcc_init_4096_q31' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f16.c:323:0: style: The function 'arm_mfcc_init_512_f16' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f32.c:323:0: style: The function 'arm_mfcc_init_512_f32' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q15.c:322:0: style: The function 'arm_mfcc_init_512_q15' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q31.c:323:0: style: The function 'arm_mfcc_init_512_q31' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f16.c:236:0: style: The function 'arm_mfcc_init_64_f16' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_f32.c:236:0: style: The function 'arm_mfcc_init_64_f32' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q15.c:235:0: style: The function 'arm_mfcc_init_64_q15' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_mfcc_init_q31.c:236:0: style: The function 'arm_mfcc_init_64_q31' is never used. [unusedFunction]
+
+^
+Source/ControllerFunctions/arm_pid_reset_f32.c:45:0: style: The function 'arm_pid_reset_f32' is never used. [unusedFunction]
+
+^
+Source/ControllerFunctions/arm_pid_reset_q15.c:45:0: style: The function 'arm_pid_reset_q15' is never used. [unusedFunction]
+
+^
+Source/ControllerFunctions/arm_pid_reset_q31.c:45:0: style: The function 'arm_pid_reset_q31' is never used. [unusedFunction]
+
+^
+Examples/ARM/arm_convolution_example/math_helper.c:120:0: style: The function 'arm_provide_guard_bits_q15' is never used. [unusedFunction]
+
+^
+Examples/ARM/arm_convolution_example/math_helper.c:224:0: style: The function 'arm_provide_guard_bits_q31' is never used. [unusedFunction]
+
+^
+Examples/ARM/arm_convolution_example/math_helper.c:246:0: style: The function 'arm_provide_guard_bits_q7' is never used. [unusedFunction]
+
+^
+Source/TransformFunctions/arm_cfft_radix8_f16.c:47:0: style: The function 'arm_radix8_butterfly_f16' is never used. [unusedFunction]
+
+^
+Testing/FrameworkSource/Error.cpp:1049:0: style: The function 'assert_false' is never used. [unusedFunction]
+
+^
+Testing/FrameworkSource/Error.cpp:134:0: style: The function 'assert_not_empty' is never used. [unusedFunction]
+
+^
+Testing/FrameworkSource/Error.cpp:727:0: style: The function 'assert_snr_error' is never used. [unusedFunction]
+
+^
+Testing/FrameworkSource/Error.cpp:1041:0: style: The function 'assert_true' is never used. [unusedFunction]
+
+^
+Testing/FrameworkSource/Pattern.cpp:176:0: style: The function 'dumpPattern' is never used. [unusedFunction]
+
+^
+Testing/Source/Tests/FullyConnected.cpp:10:0: style: The function 'printPattern' is never used. [unusedFunction]
+
+^
+PythonWrapper/examples/kws_example/kws/scheduler.cpp:72:0: style: The function 'scheduler' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
